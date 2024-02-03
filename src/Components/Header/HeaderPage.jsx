@@ -1,4 +1,5 @@
 import React from "react";
+import "../../style/scss/style.min.css";
 import { Link } from "react-router-dom";
 
 function HeaderPage() {
