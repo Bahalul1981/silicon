@@ -1,7 +1,13 @@
 import React from "react";
+import HeaderPage from "../../Header/HeaderPage";
 
 function NewsPage() {
-  return <div>Hello I am from News Page</div>;
+  return (
+    <div>
+      <HeaderPage />
+      <h1>Hello I am from News page</h1>
+    </div>
+  );
 }
 
 export default NewsPage;

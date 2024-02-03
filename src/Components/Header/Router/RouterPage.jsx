@@ -13,7 +13,7 @@ function RouterPage() {
           <Route path="/" element={<HomePage />}></Route>
           <Route path="/contact" element={<ContactPage />}></Route>
           <Route path="/error" element={<ErrorPage />}></Route>
-          <Route path="/feature" element={<FeaturePage />}></Route>
+          <Route path="/features" element={<FeaturePage />}></Route>
           <Route path="/overview" element={<Overview />}></Route>
         </Routes>
       </BrowserRouter>

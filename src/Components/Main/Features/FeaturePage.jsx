@@ -1,9 +1,11 @@
 import React from "react";
+import HeaderPage from "../../Header/HeaderPage";
 
 function FeaturePage() {
   return (
     <div>
-      <h1>Hello I am form FeturesPage</h1>
+      <HeaderPage />
+      <h1>Hello I am from Features page</h1>
     </div>
   );
 }
