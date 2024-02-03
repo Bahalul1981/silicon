@@ -5,10 +5,11 @@ import { Link } from "react-router-dom";
 function HeaderPage() {
   return (
     <div className="main-header-div">
-      <header>
-        <div className="Logo-and-text">
+      <div className="Logo-and-text">
+        <header>
           <nav>
             <ul>
+              <li>logo</li>
               <li>
                 <Link to="/">Home</Link>
               </li>
@@ -26,14 +27,14 @@ function HeaderPage() {
               </li>
             </ul>
           </nav>
+        </header>
+      </div>
+      <div className="toggle-login">
+        <div>
+          <p>I am tougle</p>
         </div>
-        <div className="toggle-login">
-          <div>
-            <p>I am tougle</p>
-          </div>
-          <div>Login / logout</div>
-        </div>
-      </header>
+        <div>Login / logout</div>
+      </div>
     </div>
   );
 }
