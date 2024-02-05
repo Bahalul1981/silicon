@@ -1,5 +1,9 @@
 import React from "react";
 import "../../style/scss/style.min.css";
+import logos from "../../style/assets/Image/Group 2.png";
+import logoText from "../../style/assets/Image/Silicon.png";
+import signeUp from "../../style/assets/Image/btn.png";
+import Tougle from "../../style/assets/Image/light toggle.png";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -10,7 +14,13 @@ function HeaderPage() {
         <div className="header-container">
           <div className="logo-and-text">
             <div className="logo-image">
-              <img src="" alt="Logo" />
+              <div>
+                <img src={logos} alt="" />
+              </div>
+
+              <div className="silicon-text">
+                <img src={logoText} alt="" />
+              </div>
             </div>
             <nav className="navigation-bar">
               <ul>
@@ -34,13 +44,18 @@ function HeaderPage() {
           </div>
 
           <div className="toggle-login">
-            <div>
-              <p>I am toggle</p>
+            <div className="Light-Dark">
+              <div>Light</div>
+              <div>
+                <img src={Tougle} alt="" />
+              </div>
+              <div>Dark</div>
             </div>
             <div>
-              <p>I am toggle</p>
+              <img src={signeUp} className="Signe-up" alt="" />
             </div>
           </div>
+
           <div className="burgerMenue">
             <FontAwesomeIcon
               icon={faBars}
