@@ -1,11 +1,18 @@
 import React from "react";
 import HeaderPage from "../../Header/HeaderPage";
-
+import MobileImg from "../../../style/assets/Image/mobile.svg";
 function HomePage() {
   return (
     <div>
       <HeaderPage />
-      <h1>Hello I am from Home page</h1>
+      <div className="main-vid-homePage">
+        <div className="text-div">
+          <h1>Hello I am from homePage</h1>
+        </div>
+        <div className="image-div">
+          <img src={MobileImg} alt="" />
+        </div>
+      </div>
     </div>
   );
 }

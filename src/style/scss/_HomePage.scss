@@ -1,0 +1,12 @@
+@import "./core/Basic-Style";
+
+.main-vid-homePage {
+  @include flexContainer;
+  background-color: #fefbff;
+  .image-div {
+    margin-top: 50px;
+    img {
+      height: 600px;
+    }
+  }
+}
