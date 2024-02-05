@@ -1,29 +1,38 @@
 @import "./core/Basic-Style";
 
-.main-header-div {
+header .header-container {
   @include flexContainer;
-  background-color: antiquewhite;
-  padding: 30px;
-}
-.Logo-and-text {
-  nav {
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: aquamarine;
+  .logo-and-text {
+    display: flex;
+    align-items: center;
+  }
+  .logo-image {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .navigation-bar {
     ul {
-      display: flex;
+      list-style: none;
+      display: none;
+
       li {
-        margin-right: 50px;
-        font-size: large;
-        color: #333;
-        font-weight: bold;
-        &:hover {
-          text-decoration: underline;
-        }
+        font-size: larger;
+        margin-right: 30px;
       }
     }
   }
-}
-.toggle-login {
-  display: flex;
-  flex: 0.3;
-  font-size: large;
-  justify-content: space-around;
+  .toggle-login {
+    display: none;
+    align-items: center;
+    padding-left: 30px;
+  }
+  .toggle-login > div {
+    margin-right: 15px;
+  }
 }
