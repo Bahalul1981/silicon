@@ -1,7 +1,8 @@
 import React from "react";
 import "../../style/scss/style.min.css";
 import { Link } from "react-router-dom";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 function HeaderPage() {
   return (
     <>
@@ -40,7 +41,12 @@ function HeaderPage() {
               <p>I am toggle</p>
             </div>
           </div>
-          <button>Burger</button>
+          <div className="burgerMenue">
+            <FontAwesomeIcon
+              icon={faBars}
+              style={{ fontSize: "24px", color: "black" }}
+            />
+          </div>
         </div>
       </header>
     </>
