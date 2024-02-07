@@ -1,0 +1,84 @@
+@import "../core/base";
+@import "../core/colors";
+@import "../components/toggle-switch-btn";
+@import "../components/buttons";
+
+header .header-container {
+  @include BasicFlexContainer;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fefbff;
+  .logo-and-text {
+    display: flex;
+    align-items: center;
+  }
+  .logo-image {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .navigation-bar {
+    text-decoration: none;
+    ul {
+      display: none;
+
+      li {
+        font-size: 18px;
+        margin-right: 30px;
+        list-style: none;
+        a {
+          color: black;
+
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .toggle-login {
+    display: none;
+    align-items: center;
+    padding-left: 30px;
+  }
+  .toggle-login > div {
+    margin-left: 40px;
+  }
+  .logo-image {
+    display: flex;
+    align-items: center;
+    .silicon-text {
+      padding-left: 5px;
+    }
+  }
+  .Light-Dark {
+    align-items: center;
+    display: flex;
+    div {
+      font-size: 16px;
+    }
+  }
+  .toggle-login {
+    .Signe-up {
+      height: 32px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header .header-container {
+    .navigation-bar {
+      ul {
+        display: flex;
+        li {
+          color: black;
+        }
+      }
+    }
+    .toggle-login {
+      display: flex;
+    }
+    .burgerMenue {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+@mixin BasicFlexContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  padding-right: 15px;
+}

@@ -1,0 +1,19 @@
+@import "../core/media";
+@import "../core/base";
+@import "../core/colors";
+
+.main-vid-homePage {
+  @include background-color;
+  .homepage-image-div {
+    height: 100vh;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+@include md {
+  .main-vid-homePage {
+    @include BasicFlexContainer;
+  }
+}
