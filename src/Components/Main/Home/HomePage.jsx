@@ -6,11 +6,9 @@ function HomePage() {
     <div>
       <HeaderPage />
       <div className="main-vid-homePage">
-        <div className="text-div">
-          <h1>Hello I am from homePage</h1>
-        </div>
-        <div className="image-div">
-          <img src={MobileImg} alt="" />
+        <div className="homepage-text-div">Habalul</div>
+        <div className="homepage-image-div">
+          <img src={MobileImg} alt="MobileImage" />
         </div>
       </div>
     </div>

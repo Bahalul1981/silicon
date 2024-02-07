@@ -1,16 +1,31 @@
+@import "../core/media";
 @import "../core/base";
-
 .main-vid-homePage {
-  @include BasicFlexContainer;
-  background-color: #fefbff;
-  height: 100hv;
-  .image-div {
-    margin-top: 50px;
+  display: grid;
+  gap: 5px;
+
+  .homepage-text-div {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .homepage-image-div {
     img {
-      height: 580px;
+      max-width: 100%;
+      height: auto;
     }
   }
-  @media (max-width: 992px) {
-    display: block;
+}
+@include md {
+  .main-vid-homePage {
+    @include BasicFlexContainer;
+    height: 100vh;
+    .homepage-text-div {
+      display: flex;
+      flex: 1;
+    }
+    .homepage-image-div {
+      flex: 1;
+    }
   }
 }
