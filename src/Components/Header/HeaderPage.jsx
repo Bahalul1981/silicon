@@ -29,16 +29,16 @@ function HeaderPage() {
                   <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <Link to="/contact">Contact</Link>
-                </li>
-                <li>
-                  <Link to="/error">Error</Link>
+                  <Link to="/overview">Overview</Link>
                 </li>
                 <li>
                   <Link to="/features">Features</Link>
                 </li>
                 <li>
-                  <Link to="/overview">Overview</Link>
+                  <Link to="/news">News</Link>
+                </li>
+                <li>
+                  <Link to="/contact">Contact</Link>
                 </li>
               </ul>
             </nav>
