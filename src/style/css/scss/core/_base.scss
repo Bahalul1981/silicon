@@ -2,5 +2,16 @@
   display: flex;
   justify-content: space-between;
   padding: 15px;
-  padding-right: 15px;
+}
+@mixin basicLRpadding {
+  padding: 0 15px;
+}
+@mixin imageAdapt {
+  max-width: 100%;
+  height: auto;
+}
+@mixin mobileImageCenter {
+  display: flex;
+  justify-items: center;
+  width: 100%;
 }
