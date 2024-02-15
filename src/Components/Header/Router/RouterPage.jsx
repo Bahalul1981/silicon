@@ -5,6 +5,7 @@ import FeaturePage from "../../Main/Features/FeaturePage";
 import Overview from "../../Main/Overview/Overview";
 import NewsPage from "../../Main/News/NewsPage";
 import HomePage from "../../Main/Home/HomePage";
+import ErrorPage from "../../Main/Error/ErrorPage";
 function RouterPage() {
   return (
     <div>
@@ -15,6 +16,7 @@ function RouterPage() {
           <Route path="/news" element={<NewsPage />}></Route>
           <Route path="/features" element={<FeaturePage />}></Route>
           <Route path="/overview" element={<Overview />}></Route>
+          <Route path="/error" element={<ErrorPage />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

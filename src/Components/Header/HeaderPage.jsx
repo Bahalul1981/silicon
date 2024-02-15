@@ -2,8 +2,6 @@ import React from "react";
 import "../../style/css/style.min.css";
 import logos from "../../style/assets/Image/Group 2.png";
 import logoText from "../../style/assets/Image/Silicon.png";
-// import signeUp from "../../style/assets/Image/btn.png";
-// import Tougle from "../../style/assets/Image/light toggle.png";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -40,6 +38,9 @@ function HeaderPage() {
                 <li>
                   <Link to="/contact">Contact</Link>
                 </li>
+                <li>
+                  <Link to="/error">Error</Link>
+                </li>
               </ul>
             </nav>
           </div>
@@ -58,7 +59,7 @@ function HeaderPage() {
             <div>
               <button className="login-logout">
                 <FontAwesomeIcon icon={faUser} className="fa-icon" />
-                Sign in / Sign up
+                Sign in / up
               </button>
             </div>
           </div>
