@@ -1,0 +1,27 @@
+.box-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $gray-300;
+  border-radius: 8px;
+  &:hover {
+    @include shadow-s;
+  }
+}
+.app-feature-main-div {
+  .app-feature-logos {
+    padding-top: 60px;
+    display: none;
+    .box-logo {
+      padding: 30px 80px;
+    }
+
+    @include md {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    @include lg {
+    }
+  }
+}

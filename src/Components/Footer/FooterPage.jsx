@@ -20,12 +20,19 @@ function FooterPage() {
           <div className="mail-button">
             <div className="">
               <label htmlFor="">
-                <input type="text" />
-                Your Email
+                <input
+                  type="text"
+                  placeholder={
+                    <>
+                      <i className="fa-regular fa-envelope"></i>{" "}
+                      <span>Your Email</span>
+                    </>
+                  }
+                />
               </label>
             </div>
             <div className="Subscribe-btn">
-              <Button>Subscrib</Button>
+              <button>Subscrib</button>
             </div>
           </div>
         </div>

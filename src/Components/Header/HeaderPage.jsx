@@ -7,6 +7,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 function HeaderPage() {
+  const goToSigneInpage = () => {
+    window.location.href = "/contact";
+  };
   return (
     <>
       <header>
@@ -57,7 +60,7 @@ function HeaderPage() {
               <div>Dark</div>
             </div>
             <div>
-              <button className="login-logout">
+              <button className="login-logout" onClick={goToSigneInpage}>
                 <FontAwesomeIcon icon={faUser} className="fa-icon" />
                 Sign in / up
               </button>

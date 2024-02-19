@@ -1,5 +1,6 @@
 import React from "react";
 import HeaderPage from "../../Header/HeaderPage";
+import FooterPage from "../../Footer/FooterPage";
 
 function ContactPage() {
   return (
@@ -92,6 +93,7 @@ function ContactPage() {
           </div>
         </div>
       </div>
+      <FooterPage />
     </div>
   );
 }
