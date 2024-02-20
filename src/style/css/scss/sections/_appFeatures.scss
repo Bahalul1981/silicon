@@ -74,7 +74,14 @@
           display: flex;
           gap: 20px;
           .text {
-            padding-right: 60px;
+            padding-right: 0px;
+            @include lg {
+              padding-right: 60px;
+            }
+            @include md {
+              padding-right: 60px;
+            }
+
             h4 {
               @include h5;
             }

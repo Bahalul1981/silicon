@@ -55,7 +55,10 @@ function AppFeatures() {
           <div className="text-and-logo">
             <div className="text-and-logo-A">
               <div className="easyPayment">
-                <img src={easyPayment} alt="" />
+                <a href="#">
+                  <img src={easyPayment} alt="" />
+                </a>
+
                 <div className="text">
                   <h4>Easy Payments</h4>
                   <p>
@@ -65,7 +68,9 @@ function AppFeatures() {
                 </div>
               </div>
               <div className="easyPayment">
-                <img src={cost} alt="" />
+                <a href="#">
+                  <img src={cost} alt="" />
+                </a>
                 <div className="text">
                   <h4>Cost Statistics</h4>
                   <p>
@@ -75,7 +80,10 @@ function AppFeatures() {
                 </div>
               </div>
               <div className="easyPayment">
-                <img src={regular} alt="" />
+                <a href="#">
+                  <img src={regular} alt="" />
+                </a>
+
                 <div className="text">
                   <h4>Regular Cashback</h4>
                   <p>
@@ -87,7 +95,10 @@ function AppFeatures() {
             </div>
             <div className="text-and-logo-B">
               <div className="easyPayment">
-                <img src={data} alt="" />
+                <a href="#">
+                  <img src={data} alt="" />
+                </a>
+
                 <div className="text">
                   <h4>Data Security</h4>
                   <p>
@@ -97,7 +108,10 @@ function AppFeatures() {
                 </div>
               </div>
               <div className="easyPayment">
-                <img src={support} alt="" />
+                <a href="">
+                  <img src={support} alt="" />
+                </a>
+
                 <div className="text">
                   <h4>Support 24/7</h4>
                   <p>
@@ -107,7 +121,10 @@ function AppFeatures() {
                 </div>
               </div>
               <div className="easyPayment">
-                <img src={standerd} alt="" />
+                <a href="#">
+                  <img src={standerd} alt="" />
+                </a>
+
                 <div className="text">
                   <h4>Top Standards</h4>
                   <p>
