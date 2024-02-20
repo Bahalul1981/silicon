@@ -46,7 +46,7 @@
         }
       }
       p {
-        @include text-m;
+        @include text-l;
         margin: 10px 0;
       }
 
@@ -65,7 +65,7 @@
       }
       .discover-more {
         align-self: flex-end;
-        @include text-s;
+        @include text-l;
         a {
           display: flex;
           justify-content: center;

@@ -51,7 +51,7 @@
           }
         }
         p {
-          @include text-m;
+          @include text-l;
           margin-top: 30px;
           display: grid;
           justify-content: center;
@@ -86,7 +86,7 @@
               @include h5;
             }
             p {
-              @include text-m;
+              @include text-l;
             }
           }
         }

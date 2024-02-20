@@ -1,0 +1,59 @@
+.how-does-it-work-main {
+  display: grid;
+  height: auto;
+  padding: 0px 15px;
+  gap: 50px;
+  background-color: $gray-100;
+  .headerText {
+    h1 {
+      @include h1;
+    }
+    display: grid;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+  .imageses {
+    display: grid;
+    gap: 3rem;
+    .iconOne,
+    .iconTwo,
+    .imageOne,
+    .imageTwo,
+    .imageThree,
+    .round-cirkel {
+      display: grid;
+      justify-content: center;
+    }
+    @include lg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    @include md {
+      display: flex;
+    }
+  }
+  .bottomText {
+    h3 {
+      @include h3;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    p {
+      @include text-l;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 100px;
+      padding: 0px 20%;
+      @include lg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 30%;
+      }
+    }
+  }
+}
