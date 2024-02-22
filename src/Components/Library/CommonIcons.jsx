@@ -25,5 +25,27 @@ function Arrowleft() {
     </div>
   );
 }
+function ArrowUpp() {
+  return (
+    <div className="iconOne">
+      <a href="#">
+        <div className="cirkel-upp">
+          <i class="fa-solid fa-angle-up"></i>
+        </div>
+      </a>
+    </div>
+  );
+}
+function ArrowDown() {
+  return (
+    <div className="cirkel-upp">
+      <a href="#">
+        <div className="cirkel-down">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </a>
+    </div>
+  );
+}
 
-export { ArrowRight, Arrowleft };
+export { ArrowRight, Arrowleft, ArrowUpp, ArrowDown };
