@@ -1,0 +1,112 @@
+.make-money-main-div {
+  background: $gradient-background;
+  .transfer-text-image {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 30px;
+    .make-monet-text {
+      display: grid;
+      gap: 20px;
+      margin-top: 2rem;
+      h2 {
+        @include h2;
+      }
+      p {
+        display: flex;
+
+        gap: 10px;
+        @include text-m;
+      }
+      @include lg {
+        .button-primary {
+          @include button-lg;
+        }
+      }
+    }
+    @include lg {
+      display: flex;
+
+      .make-monet-text {
+        width: 40%;
+        h2 {
+          padding-right: 40%;
+        }
+      }
+    }
+    .make-monet-image {
+      img {
+        margin-top: 2rem;
+        @include imageAdapt;
+      }
+    }
+  }
+
+  // REACIVE PAYMENT
+
+  .reacive-payment {
+    @include lg {
+      display: grid;
+      background-color: $danger;
+      justify-content: center;
+      margin: 0px 50px;
+    }
+    display: grid;
+    .payment-image {
+      display: grid;
+      justify-content: center;
+      img {
+        @include imageAdapt;
+      }
+    }
+    .payment-text {
+      display: grid;
+
+      .text {
+        h2 {
+          @include h2;
+        }
+      }
+      .sub-text {
+        display: flex;
+        justify-content: center;
+
+        .textOne,
+        .textTwo {
+          margin-left: 15px;
+          margin-right: 150px;
+          @include lg {
+            margin-left: 0px;
+          }
+          p {
+            @include text-m;
+            margin-top: 20px;
+          }
+        }
+      }
+      .button-div {
+        .button-primary {
+          display: flex;
+          margin-top: 40px;
+          width: 100%;
+          @include lg {
+            @include button-lg;
+          }
+        }
+      }
+    }
+
+    @include lg {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 5rem;
+      .payment-text {
+        .text {
+          margin-top: 5rem;
+        }
+      }
+    }
+  }
+}

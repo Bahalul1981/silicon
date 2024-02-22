@@ -1,0 +1,41 @@
+.make-money-main-div {
+  .client-area {
+    padding: 150px 15px;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    gap: 40px;
+
+    @include lg {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      .client-area-text {
+        display: grid;
+        justify-content: center;
+      }
+    }
+    .client-area-text {
+      .text,
+      h2 {
+        @include h2;
+        display: flex;
+        justify-content: center;
+      }
+      .client-area-icons {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        @include lg {
+          justify-content: flex-start;
+        }
+      }
+    }
+    .commentOne,
+    .commentTwo {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 5px 15px;
+    }
+  }
+}

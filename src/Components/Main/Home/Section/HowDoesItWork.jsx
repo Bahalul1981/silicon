@@ -2,6 +2,7 @@ import React from "react";
 import iphonProOne from "../../../../style/assets/Image/howDoesItWork/iPhonePro1.svg";
 import iphonProTwo from "../../../../style/assets/Image/howDoesItWork/iPhonePro2.svg";
 import iphonProThree from "../../../../style/assets/Image/howDoesItWork/iPhonePro3.svg";
+import { ArrowRight, Arrowleft } from "../../../Library/CommonIcons";
 function HowDoesItWork() {
   return (
     <div className="how-does-it-work-main">
@@ -9,13 +10,7 @@ function HowDoesItWork() {
         <h1>How Does It Work</h1>
       </div>
       <div className="imageses">
-        <div className="iconOne">
-          <a href="#">
-            <div className="round-cirkel">
-              <i class="fa-solid fa-chevron-left"></i>
-            </div>
-          </a>
-        </div>
+        <Arrowleft />
         <div className="imageOne">
           <img src={iphonProOne} alt="mobileOne" />
         </div>
@@ -25,13 +20,7 @@ function HowDoesItWork() {
         <div className="imageThree">
           <img src={iphonProThree} alt="mobileThree" />
         </div>
-        <div className="iconTwo">
-          <a href="#">
-            <div className="round-cirkel">
-              <i class="fa-solid fa-chevron-right"></i>
-            </div>
-          </a>
-        </div>
+        <ArrowRight />
       </div>
       <div className="bottomText">
         <h3>Step 2. Latest transaction history </h3>

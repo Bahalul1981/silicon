@@ -1,7 +1,7 @@
 @import "../core/colors";
 @mixin button {
   display: flex;
-  padding: 8px 28px;
+  padding: 12px 12px;
   justify-content: center;
   align-items: center;
   gap: 12px;
@@ -9,12 +9,19 @@
   text-align: center;
   font-size: 14px;
 }
+@mixin button-lg {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  width: 25%;
+}
 
 .button-primary {
   @include button;
   color: $white;
   background: $primary;
   border: none;
+  cursor: pointer;
 
   &:hover {
     text-decoration: none;
