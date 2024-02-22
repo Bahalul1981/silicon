@@ -49,7 +49,6 @@
   .reacive-payment {
     @include lg {
       display: grid;
-      background-color: $danger;
       justify-content: center;
       margin: 0px 50px;
     }

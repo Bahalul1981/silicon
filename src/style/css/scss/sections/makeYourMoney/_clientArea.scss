@@ -1,5 +1,6 @@
 .make-money-main-div {
   .client-area {
+    position: relative;
     padding: 150px 15px;
     display: grid;
     grid-template-rows: 1fr;
@@ -9,6 +10,7 @@
     @include lg {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+      margin: 0px 50px;
       .client-area-text {
         display: grid;
         justify-content: center;
@@ -33,9 +35,33 @@
     }
     .commentOne,
     .commentTwo {
+      p {
+        @include text-m;
+      }
+      .rank {
+        margin: 30px 0px;
+      }
+      .semiCollon {
+        @include lg {
+          display: flex;
+          position: absolute;
+          top: 125px;
+        }
+      }
+      @include shadow-s;
+      padding: 20px;
       display: grid;
+      border-radius: 5px;
+      @include background-color;
       grid-template-columns: 1fr;
       margin: 5px 15px;
+      .client-prof {
+        display: flex;
+        margin-top: 20px;
+        h4 {
+          @include h6;
+        }
+      }
     }
   }
 }

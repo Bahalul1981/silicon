@@ -8,6 +8,8 @@ import { ArrowRight, Arrowleft } from "../../../Library/CommonIcons";
 import semicolon from "../../../../style/assets/Image/MakeYourMoney/quotes.svg";
 import retingOne from "../../../../style/assets/Image/MakeYourMoney/rating1.svg";
 import retingTwo from "../../../../style/assets/Image/MakeYourMoney/rating2.svg";
+import Fannie from "../../../../style/assets/Image/MakeYourMoney/comment-image.png";
+import Albert from "../../../../style/assets/Image/MakeYourMoney/comment-image2.svg";
 function MakeYourMoney() {
   const ErrorPage = () => {
     window.location.href = "/error";
@@ -90,34 +92,40 @@ function MakeYourMoney() {
             <img src={semicolon} alt="semi-collon" />
           </div>
 
-          <img src={retingOne} alt="rank" />
+          <img src={retingOne} alt="rank" className="rank" />
           <p>
             Sit pretium aliquam tempor, orci dolor sed maecenas rutrum sagittis.
             Laoreet posuere rhoncus, egestas lacus, egestas justo aliquam vel.
             Nisi vitae lectus hac hendrerit. Montes justo turpis sit amet.
           </p>
           <div className="client-prof">
-            {" "}
-            <img src="#" alt="Fannie" />
-            <h4>Fannie Summers</h4>
-            <p>Designer</p>
+            <div>
+              <img src={Fannie} alt="Fannie" />
+            </div>
+            <div>
+              <h4>Fannie Summers</h4>
+              <p>Designer</p>
+            </div>
           </div>
         </div>
         <div className="commentTwo">
           <div className="semiCollon">
             <img src={semicolon} alt="semi-collon" />
           </div>
-          <img src={retingTwo} alt="renk" />
+          <img src={retingTwo} alt="renk" className="rank" />
           <p>
             Nunc senectus leo vel venenatis accumsan vestibulum sollicitudin
             amet porttitor. Nisl bibendum nulla tincidunt eu enim ornare
             dictumst sit amet. Dictum pretium dolor tincidunt egestas eget nunc.
           </p>
           <div className="client-prof">
-            {" "}
-            <img src="#" alt="Albart" />
-            <h4>Albert Flores</h4>
-            <p>Developer</p>
+            <div>
+              <img src={Albert} alt="Albart" />
+            </div>
+            <div>
+              <h4>Albert Flores</h4>
+              <p>Developer</p>
+            </div>
           </div>
         </div>
       </div>
