@@ -1,0 +1,70 @@
+.homePageFooterWrapper {
+  display: grid;
+  justify-content: center;
+  margin-top: 90px;
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    .footer-logo-img {
+      img {
+        height: 50px;
+      }
+    }
+  }
+  .nav-bar {
+    .navigation-bar {
+      .navigation-ul {
+        display: grid;
+        justify-content: center;
+        margin-top: 50px;
+        list-style: none;
+        li {
+          a {
+            color: $gray-900;
+            font-weight: bold;
+          }
+        }
+        @include lg {
+          display: flex;
+          gap: 40px;
+        }
+        @include md {
+          display: flex;
+          gap: 40px;
+        }
+      }
+    }
+  }
+  .app-icon {
+    display: grid;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 30px;
+    @include lg {
+      display: flex;
+    }
+    @include md {
+      display: flex;
+    }
+  }
+  .socialmedia-icon {
+    display: flex;
+    justify-self: center;
+    gap: 25px;
+    margin-top: 50px;
+  }
+  .main-footer-text {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    @include text-s;
+    margin-bottom: 30px;
+    .Second-text {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
