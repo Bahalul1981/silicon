@@ -83,7 +83,6 @@ function AppFeatures() {
                 <a href="#">
                   <img src={regular} alt="" />
                 </a>
-
                 <div className="text">
                   <h4>Regular Cashback</h4>
                   <p>
@@ -93,7 +92,7 @@ function AppFeatures() {
                 </div>
               </div>
             </div>
-            <div className="text-and-logo-B">
+            <div className="text-and-logo-B" style={{ marginTop: "90px" }}>
               <div className="easyPayment">
                 <a href="#">
                   <img src={data} alt="" />

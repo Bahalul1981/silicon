@@ -74,10 +74,11 @@
 
         .textOne,
         .textTwo {
-          margin-left: 15px;
-          margin-right: 150px;
+          margin: 10px 5px;
           @include lg {
             margin-left: 0px;
+            margin-left: 15px;
+            margin-right: 150px;
           }
           p {
             @include text-m;

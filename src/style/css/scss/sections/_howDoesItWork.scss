@@ -13,24 +13,33 @@
     margin-top: 5rem;
   }
   .imageses {
-    display: grid;
-    gap: 3rem;
-    .iconOne,
-    .iconTwo,
     .imageOne,
     .imageTwo,
-    .imageThree,
-    .round-cirkel {
-      display: grid;
-      justify-content: center;
-    }
-    @include lg {
+    .imageThree {
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      gap: 3rem;
+      .iconOne,
+      .iconTwo,
+      .imageOne,
+      .imageTwo,
+      .imageThree,
+      .round-cirkel {
+        display: grid;
+        justify-content: center;
+      }
+
       display: flex;
       justify-content: center;
       align-items: center;
     }
     @include md {
       display: flex;
+      justify-content: center;
+
+      align-items: center;
     }
   }
   .bottomText {

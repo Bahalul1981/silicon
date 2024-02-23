@@ -64,11 +64,14 @@
       .text-and-logo {
         margin-top: 100px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        @include lg {
+          grid-template-columns: 1fr 1fr;
+        }
       }
       .text-and-logo-A,
       .text-and-logo-B {
         display: grid;
+        justify-content: center;
         gap: 90px;
         .easyPayment {
           display: flex;
