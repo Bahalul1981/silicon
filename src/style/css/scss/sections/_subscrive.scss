@@ -22,66 +22,14 @@
       }
     }
   }
-  .email-subscription {
+
+  @include lg {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    .Subscribe-btn {
-      background-color: $primary;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      padding: 8px 10px;
-      cursor: pointer;
-    }
-    .input-wrapper {
-      display: flex;
-      align-items: center;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      margin-right: 0px;
-      input {
-        border: none;
-        outline: none;
-        width: 200px;
-        padding: 8px;
-      }
-      .icon-wrapper {
-        padding: 5px 10px;
-      }
-    }
-    @include lg {
-      display: flex;
-    }
-    @include md {
-      display: flex;
-    }
+  }
+  @include md {
+    display: flex;
   }
 }
-// CSS Extra
-// .email-subscription {
-//   display: flex;
-//   align-items: center;
-// }
-
-// .input-wrapper {
-//   display: flex;
-//   align-items: center;
-//   border: 1px solid #ccc;
-//   border-radius: 4px;
-//   margin-right: 10px;
-// }
-
-// .icon-wrapper {
-//   padding: 5px;
-// }
-
-// input {
-//   border: none;
-//   outline: none;
-//   flex: 1;
-//   padding: 8px;
-// }
 
 button {
   background-color: #007bff;

@@ -1,0 +1,21 @@
+.footer-main-div-wrapper {
+  height: 400px;
+  background-color: $dark;
+  color: #fff;
+  display: grid;
+  justify-self: center;
+  @include md {
+    display: flex;
+  }
+  @include lg {
+    display: flex;
+    .logo-subcribe {
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer-links {
+      flex: 1;
+    }
+  }
+}

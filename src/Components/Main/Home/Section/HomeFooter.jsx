@@ -9,6 +9,8 @@ import faceBook from "../../../../style/assets/Image/HomePageFooter/FaceBook.svg
 import twiter from "../../../../style/assets/Image/HomePageFooter/Twiter.svg";
 import instagram from "../../../../style/assets/Image/HomePageFooter/Instagram.svg";
 import youtube from "../../../../style/assets/Image/HomePageFooter/youtube.svg";
+import FooterPage from "../../../Footer/FooterPage";
+import SubscribeField from "../../../Library/SubscribeField";
 
 function HomeFooter() {
   return (
@@ -91,6 +93,7 @@ function HomeFooter() {
             consectetur. aspernatur.
           </p>
         </div>
+        <FooterPage />
       </div>
     </>
   );

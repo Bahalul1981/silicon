@@ -1,5 +1,6 @@
 import React from "react";
 import notification from "../../../../style/assets/Image/MakeYourMoney/notification.svg";
+import SubscribeField from "../../../Library/SubscribeField";
 function Subscribe() {
   return (
     <div className="notification-wrapper">
@@ -14,17 +15,7 @@ function Subscribe() {
           </h4>
         </div>
       </div>
-      <div className="email-subscription">
-        <div className="input-wrapper">
-          <div className="icon-wrapper">
-            <i class="fa-regular fa-envelope"></i>
-          </div>
-          <input type="email" placeholder="Your Email" />
-        </div>
-        <button type="submit" className="Subscribe-btn">
-          Subscribe
-        </button>
-      </div>
+      <SubscribeField />
     </div>
   );
 }

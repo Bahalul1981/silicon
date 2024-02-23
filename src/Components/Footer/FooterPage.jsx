@@ -1,8 +1,8 @@
 import React from "react";
-
+import SubscribeField from "../Library/SubscribeField";
 function FooterPage() {
   return (
-    <div className="footer-main-div">
+    <div className="footer-main-div-wrapper">
       <div className="logo-subcribe">
         <div className="footer-logo">
           <img src="" alt="mainLogo" />
@@ -17,24 +17,7 @@ function FooterPage() {
         </div>
         <div className="">
           <h5>Subscribe to our newsletter</h5>
-          <div className="mail-button">
-            <div className="">
-              <label htmlFor="">
-                <input
-                  type="text"
-                  placeholder={
-                    <>
-                      <i className="fa-regular fa-envelope"></i>{" "}
-                      <span>Your Email</span>
-                    </>
-                  }
-                />
-              </label>
-            </div>
-            <div className="Subscribe-btn">
-              <button>Subscrib</button>
-            </div>
-          </div>
+          <SubscribeField />
         </div>
         <div className="">
           &copy; {new Date().getFullYear()} Silicon. All rights reserved. Lorem
