@@ -1,9 +1,9 @@
 .footer-main-div-wrapper {
-  height: 400px;
+  height: auto;
   background-color: $dark;
   color: #fff;
   display: grid;
-  justify-self: center;
+
   @include md {
     display: flex;
   }
@@ -11,11 +11,146 @@
     display: flex;
     .logo-subcribe {
       flex: 1;
+      display: grid;
       justify-content: center;
-      align-items: center;
     }
     .footer-links {
       flex: 1;
+    }
+  }
+  @include md {
+    display: flex;
+    .logo-subcribe {
+      flex: 1;
+    }
+    .footer-links {
+      flex: 1;
+    }
+  }
+  .logo-subcribe {
+    margin: 0px 15px;
+    margin-top: 70px;
+    .footer-logo {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+
+      @include lg {
+        justify-content: flex-start;
+      }
+    }
+
+    .footer-silicon-text {
+      p {
+        justify-content: center;
+        @include text-s;
+        color: $gray-500;
+      }
+    }
+    .subscribe-newsLetter {
+      margin-top: 40px;
+      display: grid;
+      gap: 7px;
+      justify-content: center;
+      @include lg {
+        justify-content: flex-start;
+      }
+      @include md {
+        justify-content: flex-start;
+      }
+      h5 {
+        @include h6;
+        color: #fff;
+      }
+      .input-wrapper-footer {
+        .input-container-footer {
+          display: flex;
+          align-items: center;
+          border: 1px solid #817d7d;
+          border-radius: 3px;
+          overflow: hidden;
+          .left-section-footer {
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            background-color: transparent;
+            i {
+              color: #555;
+            }
+          }
+        }
+        input {
+          border: none;
+          outline: none;
+          width: 170px;
+          height: 20px;
+          padding: 0px;
+          background-color: transparent;
+        }
+        .subscribe-button-footer {
+          color: white;
+          border: none;
+          padding: 8px 15px;
+          cursor: pointer;
+        }
+      }
+    }
+    .Footer {
+      p {
+        color: $gray-500;
+      }
+      margin-top: 50px;
+      @include text-s;
+      color: #fff;
+    }
+  }
+  .footer-links {
+    @include lg {
+      display: flex;
+      gap: 50px;
+      .link-div-three {
+        margin-left: 40px;
+      }
+    }
+    .link-div,
+    .link-div-three {
+      ul {
+        margin-top: 50px;
+        li {
+          list-style: none;
+          display: grid;
+          justify-content: flex-start;
+
+          a {
+            color: #fff;
+            transition: color 0.3s;
+            margin-top: 10px;
+          }
+          a:hover {
+            @include h6;
+            color: rgb(75, 75, 228);
+          }
+        }
+      }
+    }
+  }
+  .link-div-three {
+    margin-bottom: 20px;
+    ul {
+      li,
+      a {
+        display: grid;
+        justify-content: flex-start;
+        @include lg {
+          justify-content: flex-start;
+        }
+        @include md {
+          justify-content: flex-start;
+        }
+        a {
+          color: #fff;
+        }
+      }
     }
   }
 }

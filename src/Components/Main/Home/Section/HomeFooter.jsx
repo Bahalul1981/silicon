@@ -1,7 +1,7 @@
 import React from "react";
 import Subscribe from "./Subscribe";
 import { Link } from "react-router-dom";
-import siliconLogo from "../../../../style/assets/Image/Group 2.png";
+import siliconLogo from "../../../../style/assets/Image/SiliconLogo.svg";
 import siliconText from "../../../../style/assets/Image/Silicon.png";
 import apple from "../../../../style/assets/Image/appstore.svg";
 import android from "../../../../style/assets/Image/googleplay.svg";
@@ -82,7 +82,7 @@ function HomeFooter() {
           </div>
         </div>
         <div className="main-footer-text">
-          <p>
+          <p className="Second-text">
             &copy; {new Date().getFullYear()} Silicon. All rights reserved.
             Pulvinar urna condimentum amet tempor, ornare integer. Lorem odio
             justo malesuada suspendisse viverra
@@ -93,7 +93,6 @@ function HomeFooter() {
             consectetur. aspernatur.
           </p>
         </div>
-        <FooterPage />
       </div>
     </>
   );

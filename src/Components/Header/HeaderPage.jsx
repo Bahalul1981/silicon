@@ -1,6 +1,6 @@
 import React from "react";
 import "../../style/css/style.min.css";
-import logos from "../../style/assets/Image/Group 2.png";
+import logos from "../../style/assets/Image/SiliconLogo.svg";
 import logoText from "../../style/assets/Image/Silicon.png";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

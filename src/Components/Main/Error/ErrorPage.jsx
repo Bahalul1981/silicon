@@ -3,6 +3,7 @@ import HeaderPage from "../../Header/HeaderPage";
 import erroLogo from "../../../style/assets/Image/404.svg";
 import vector from "../../../style/assets/Image/Vector.png";
 import Copyright from "../../Library/Copyright";
+import FooterPage from "../../Footer/FooterPage";
 function ErrorPage() {
   const goToHomepage = () => {
     window.location.href = "/";
@@ -24,6 +25,7 @@ function ErrorPage() {
           <Copyright />
         </div>
       </div>
+      <FooterPage />
     </div>
   );
 }

@@ -1,27 +1,43 @@
 import React from "react";
-import SubscribeField from "../Library/SubscribeField";
+import logo from "../../style/assets/Image/Silicon.svg";
+import Silicon from "../../style/assets/Image/SiliconLogo.svg";
 function FooterPage() {
   return (
     <div className="footer-main-div-wrapper">
       <div className="logo-subcribe">
         <div className="footer-logo">
-          <img src="" alt="mainLogo" />
+          <img src={Silicon} alt="mainLogo" />
+          <img src={logo} alt="text" style={{ height: "20px" }} />
         </div>
-        <div className="">
+        <div className="footer-silicon-text">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
-            alias quidem excepturi voluptas impedit ratione, provident enim quis
-            unde id dolores. Qui nulla aliquid esse quaerat cum harum ipsa
-            dignissimos.
+            Proin ipsum pharetra, senectus eget scelerisque varius pretium{" "}
+            <br />
+            platea velit. Lacus, eget eu vitae nullam proin turpis etiam mi sit.{" "}
+            <br />
+            Non feugiat feugiat egestas nulla nec. Arcu tempus, eget <br />{" "}
+            elementum dolor ullamcorper sodales ultrices eros.
           </p>
         </div>
-        <div className="">
+        <div className="subscribe-newsLetter">
           <h5>Subscribe to our newsletter</h5>
-          <SubscribeField />
+
+          <div className="input-wrapper-footer">
+            <div className="input-container-footer">
+              <div className="left-section-footer">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <input type="email" placeholder="Your Email" />
+              <button className="subscribe-button-footer">Subscribe</button>
+            </div>
+          </div>
         </div>
-        <div className="">
-          &copy; {new Date().getFullYear()} Silicon. All rights reserved. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit
+        <div className="Footer">
+          <p className="footer-p-copy-right">
+            {" "}
+            &copy; {new Date().getFullYear()} All rights reserved. Silicon
+            Template.
+          </p>
         </div>
       </div>
 
@@ -29,15 +45,26 @@ function FooterPage() {
         <div className="link-div">
           <ul>
             <li>
-              <link to="/" />
-              Home
+              <a href="#">Home</a>
             </li>
-            <li>Service</li>
-            <li>Case Studio</li>
-            <li>About Us</li>
-            <li>News & Insight</li>
-            <li>Terms & Condiitons</li>
-            <li>Privacy Policy</li>
+            <li>
+              <a href="#">Service</a>{" "}
+            </li>
+            <li>
+              <a href="#">Case Studio</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">News & Insight</a>
+            </li>
+            <li>
+              <a href="#">Terms & Condiitons</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
           </ul>
         </div>
         <div className="link-div">
@@ -56,14 +83,15 @@ function FooterPage() {
             </li>
           </ul>
         </div>
-        <div className="contact-div">
+        <div className="link-div-three">
           <ul>
             <li>
               <a href="*">Contact Us</a>
             </li>
-            <li>
+            <div className="silicon-email">
+              {" "}
               <a href="*">silicon@gmail.com</a>
-            </li>
+            </div>
           </ul>
         </div>
       </div>

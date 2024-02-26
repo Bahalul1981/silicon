@@ -56,13 +56,10 @@
     margin-top: 50px;
   }
   .main-footer-text {
-    display: grid;
-    justify-content: center;
-    align-items: center;
     margin-top: 60px;
     @include text-s;
     margin-bottom: 30px;
-    .Second-text {
+    p {
       display: flex;
       justify-content: center;
     }
