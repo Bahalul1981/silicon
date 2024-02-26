@@ -1,13 +1,24 @@
 import React from "react";
 import HeaderPage from "../../Header/HeaderPage";
 import FooterPage from "../../Footer/FooterPage";
+import home from "../../../style/assets/Image/Contact/home.svg";
+import errow from "../../../style/assets/Image/Contact/bx-chevrons-right.svg";
+import date from "../../../style/assets/Image/Contact/date.svg";
+import MediaCenter from "./MediaCenter";
 
 function ContactPage() {
   return (
     <div>
       <HeaderPage />
-      <img src="" alt="homeContact" />
+
       <div className="contact-page-main-div">
+        <div className="contact-page-location">
+          <img src={home} alt="home" />
+          <img src={errow} alt="errow" />
+          <a href="">
+            <img src={date} alt="currentPage" />
+          </a>
+        </div>
         <div className="contact-form">
           <div className="contactUs">
             <div className="email-us">
@@ -46,53 +57,8 @@ function ContactPage() {
             <button className="make-an-appointment">Make an appointment</button>
           </div>
         </div>
-        <div className="contact-address">
-          <div className="map-location"></div>
-          <div className="contact-address">
-            <div className="medical-center-one">
-              <h3>Medical Center 1</h3>
-              <p>
-                <img src="" alt="location" />
-                4517 Washington Ave. Manchester, Kentucky 39495
-              </p>
-              <p>
-                <img src="" alt="mobile" />
-                (406) 555-0120
-              </p>
-
-              <img src="" alt="time" />
-              <h4>Mon – Fri:</h4>
-              <p> 9:00 am – 22:00 am</p>
-
-              <h4>Mon – Fri:</h4>
-              <p> 9:00 am – 22:00 am</p>
-            </div>
-            <div className="medical-center-two">
-              <h3>Medical Center 2</h3>
-              <p>
-                <img src="" alt="location" />
-                4517 Washington Ave. Manchester, Kentucky 39495
-              </p>
-              <p>
-                <img src="" alt="mobile" />
-                (406) 555-0120
-              </p>
-              <img src="" alt="time" />
-              <h4>Mon – Fri:</h4>
-              <p> 9:00 am – 22:00 am</p>
-
-              <h4>Mon – Fri:</h4>
-              <p> 9:00 am – 22:00 am</p>
-            </div>
-            <div className="medical-center-link-icon">
-              <img src="" alt="facebook" />
-              <img src="" alt="twiter" />
-              <img src="" alt="instagram" />
-              <img src="" alt="youtube" />
-            </div>
-          </div>
-        </div>
       </div>
+      <MediaCenter />
       <FooterPage />
     </div>
   );
