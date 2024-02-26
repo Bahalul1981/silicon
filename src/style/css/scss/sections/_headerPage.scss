@@ -2,12 +2,13 @@
 @import "../core/colors";
 @import "../components/toggle-switch-btn";
 @import "../components/buttons";
+@import "../core/typhographt";
 
 header .header-container {
   @include BasicFlexContainer;
   justify-content: space-between;
   align-items: center;
-  background-color: #fefbff;
+
   .logo-and-text {
     display: flex;
     align-items: center;
@@ -37,6 +38,11 @@ header .header-container {
     }
   }
   .toggle-login {
+    .Light-Dark {
+      p {
+        @include text-lg;
+      }
+    }
     display: none;
     align-items: center;
     padding-left: 30px;

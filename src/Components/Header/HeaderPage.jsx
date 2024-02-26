@@ -50,14 +50,14 @@ function HeaderPage() {
 
           <div className="toggle-login">
             <div className="Light-Dark">
-              <div>Light</div>
+              <p>Light</p>
               <div className="theme-switch">
                 <label>
                   <input type="checkbox" />
                   <span className="slider round"></span>
                 </label>
               </div>
-              <div>Dark</div>
+              <p>Dark</p>
             </div>
             <div>
               <button className="login-logout" onClick={goToSigneInpage}>
