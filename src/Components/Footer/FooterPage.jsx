@@ -27,7 +27,10 @@ function FooterPage() {
               <div className="left-section-footer">
                 <i class="fa-regular fa-envelope"></i>
               </div>
-              <input type="email" placeholder="Your Email" />
+              <div>
+                <input type="email" placeholder="Your Email" />
+              </div>
+
               <button className="subscribe-button-footer">Subscribe</button>
             </div>
           </div>
@@ -51,13 +54,22 @@ function FooterPage() {
               <a href="#">Service</a>{" "}
             </li>
             <li>
-              <a href="#">Case Studio</a>
+              <a href="#">Our client</a>
             </li>
             <li>
-              <a href="#">About Us</a>
+              <a href="#">Testimonials</a>
             </li>
             <li>
-              <a href="#">News & Insight</a>
+              <a href="#">News</a>
+            </li>
+            <li>
+              <a href="#"></a>
+            </li>
+            <li>
+              <a href="#"></a>
+            </li>
+            <li>
+              <a href="#"></a>
             </li>
             <li>
               <a href="#">Terms & Condiitons</a>

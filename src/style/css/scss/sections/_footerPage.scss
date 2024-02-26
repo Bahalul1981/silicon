@@ -3,13 +3,13 @@
   background-color: $dark;
   color: #fff;
   display: grid;
-
   @include md {
     display: flex;
   }
   @include lg {
     display: flex;
     .logo-subcribe {
+      padding-bottom: 80px;
       flex: 1;
       display: grid;
       justify-content: center;
@@ -34,6 +34,7 @@
       display: flex;
       gap: 8px;
       align-items: center;
+      justify-content: center;
 
       @include lg {
         justify-content: flex-start;
@@ -42,9 +43,17 @@
 
     .footer-silicon-text {
       p {
+        margin-top: 30px;
+        display: flex;
         justify-content: center;
         @include text-s;
         color: $gray-500;
+        @include lg {
+          justify-content: flex-start;
+        }
+        @include md {
+          justify-content: flex-start;
+        }
       }
     }
     .subscribe-newsLetter {
@@ -61,6 +70,7 @@
       h5 {
         @include h6;
         color: #fff;
+        margin-bottom: 8px;
       }
       .input-wrapper-footer {
         .input-container-footer {
@@ -82,15 +92,14 @@
         input {
           border: none;
           outline: none;
-          width: 170px;
-          height: 20px;
-          padding: 0px;
+          width: 200px;
+          padding: 10px;
           background-color: transparent;
         }
         .subscribe-button-footer {
           color: white;
           border: none;
-          padding: 8px 15px;
+          padding: 10px 18px;
           cursor: pointer;
         }
       }
@@ -98,6 +107,14 @@
     .Footer {
       p {
         color: $gray-500;
+        display: flex;
+        justify-content: center;
+        @include lg {
+          justify-content: flex-start;
+        }
+        @include md {
+          justify-content: flex-start;
+        }
       }
       margin-top: 50px;
       @include text-s;
@@ -105,51 +122,62 @@
     }
   }
   .footer-links {
+    display: grid;
+    justify-content: center;
     @include lg {
       display: flex;
+      justify-content: flex-start;
       gap: 50px;
       .link-div-three {
         margin-left: 40px;
       }
     }
-    .link-div,
-    .link-div-three {
-      ul {
-        margin-top: 50px;
-        li {
-          list-style: none;
-          display: grid;
-          justify-content: flex-start;
+    @include md {
+      display: flex;
+      justify-content: flex-start;
+      gap: 50px;
+      .link-div-three {
+        margin-left: 40px;
+      }
+    }
+  }
+  .link-div,
+  .link-div-three {
+    ul {
+      margin-top: 50px;
+      li {
+        list-style: none;
+        display: grid;
+        justify-content: flex-start;
 
-          a {
-            color: #fff;
-            transition: color 0.3s;
-            margin-top: 10px;
-          }
-          a:hover {
-            @include h6;
-            color: rgb(75, 75, 228);
-          }
+        a {
+          color: #fff;
+          transition: color 0.3s;
+          margin-top: 10px;
+        }
+        a:hover {
+          @include h6;
+          color: rgb(75, 75, 228);
         }
       }
     }
   }
-  .link-div-three {
-    margin-bottom: 20px;
-    ul {
-      li,
-      a {
-        display: grid;
+}
+.link-div-three {
+  margin-bottom: 20px;
+  ul {
+    li,
+    a {
+      display: grid;
+      justify-content: flex-start;
+      @include lg {
         justify-content: flex-start;
-        @include lg {
-          justify-content: flex-start;
-        }
-        @include md {
-          justify-content: flex-start;
-        }
-        a {
-          color: #fff;
-        }
+      }
+      @include md {
+        justify-content: flex-start;
+      }
+      a {
+        color: #fff;
       }
     }
   }
