@@ -24,14 +24,14 @@ function ContactPage() {
           </div>
           <div className="contact-form">
             <div className="contactUs">
-              <div>
+              <div className="contactUs-h2">
                 <h2>Contact Us</h2>
               </div>
               <div className="email-us">
                 <div className="round-cirkel-big">
                   <img src={email} alt="emailLogo" />
                 </div>
-                <div className="">
+                <div className="email-us-text">
                   <h4>Email us</h4>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -49,7 +49,7 @@ function ContactPage() {
                 <div className="round-cirkel-big">
                   <img src={addHuman} alt="careersLogo" />
                 </div>
-                <div className="">
+                <div className="careers-text">
                   <h4>Careers</h4>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
