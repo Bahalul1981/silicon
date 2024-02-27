@@ -1,42 +1,54 @@
 import React from "react";
 import HeaderPage from "../../Header/HeaderPage";
+import FooterPage from "../../Footer/FooterPage";
+import NewsPageTwo from "./NewsPageTwo";
 
 function NewsPage() {
   return (
     <div>
       <HeaderPage />
-      <div className="newspage-main-div">
-        <div className="text-icon">
-          <img src="" alt="home-and-news-icon" />
-          <h2>Our News</h2>
-        </div>
-        <div className="api-produtcs">Fetch data from API</div>
-        <div className="dont-miss">
+      <div className="newspage-wrapper">
+        <NewsPageTwo />
+        <div className="dont-miss-wrapper">
           <div className="text">
-            <h2>Don´t Want to Miss Anything</h2> <img src="" alt="logo" />
+            <h2>Don´t Want to Miss Anything</h2>
+            <span>
+              <img src="" alt="logo" />
+            </span>
           </div>
-          <div className="redio-buttons">
-            <div className="">Sign up for Newsletters</div>
+          <div className="redio-buttons-div">
             <div className="">
-              {" "}
-              <input type="checkbox" id="myCheckbox" />
-              <label htmlFor="myCheckbox"> Daily Newsletter</label>
-              <input type="checkbox" id="myCheckbox" />
-              <label htmlFor="myCheckbox"> Event Updates</label>
+              <h3>Sign up for Newsletters</h3>
+            </div>
+            <div>
+              <div>
+                <input type="checkbox" id="myCheckbox" />
+                <label htmlFor="myCheckbox"> Daily Newsletter</label>
+              </div>
+              <div>
+                <input type="checkbox" id="myCheckbox" />
+                <label htmlFor="myCheckbox"> Event Updates</label>
+              </div>
             </div>
             <div className="">
-              {" "}
-              <input type="checkbox" id="myCheckbox" />
-              <label htmlFor="myCheckbox"> Advertising Updates</label>
-              <input type="checkbox" id="myCheckbox" />
-              <label htmlFor="myCheckbox"> Startups Weekly</label>
+              <div>
+                <input type="checkbox" id="myCheckbox" />
+                <label htmlFor="myCheckbox"> Daily Newsletter</label>
+              </div>
+              <div>
+                <input type="checkbox" id="myCheckbox" />
+                <label htmlFor="myCheckbox"> Event Updates</label>
+              </div>
             </div>
             <div className="">
-              {" "}
-              <input type="checkbox" id="myCheckbox" />
-              <label htmlFor="myCheckbox"> Week in Review</label>
-              <input type="checkbox" id="myCheckbox" />
-              <label htmlFor="myCheckbox">Podcasts</label>
+              <div>
+                <input type="checkbox" id="myCheckbox" />
+                <label htmlFor="myCheckbox"> Daily Newsletter</label>
+              </div>
+              <div>
+                <input type="checkbox" id="myCheckbox" />
+                <label htmlFor="myCheckbox"> Event Updates</label>
+              </div>
             </div>
           </div>
           <div className="subscribe">
@@ -48,6 +60,7 @@ function NewsPage() {
             <a href="#">privacy policy</a>
           </p>
         </div>
+        <FooterPage />
       </div>
     </div>
   );

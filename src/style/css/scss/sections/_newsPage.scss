@@ -1,0 +1,13 @@
+.newspage-wrapper {
+  .dont-miss-wrapper {
+    @include background-gray;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    .redio-buttons-div {
+      display: flex;
+      gap: 30px;
+    }
+  }
+}
