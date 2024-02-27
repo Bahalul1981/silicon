@@ -52,7 +52,23 @@
   width: 35px;
   @include shadow-s;
 }
+@mixin circle-button-big {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  @include shadow-s;
+}
 
+.round-cirkel-big {
+  @include circle-button-big;
+  color: $gray-900;
+  background: $white;
+  border: none;
+  transition: all 0.15s ease-in-out;
+}
 .round-cirkel,
 .button-circle,
 i.buttion-circle,
