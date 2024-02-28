@@ -3,11 +3,87 @@
     @include background-gray;
     height: auto;
     display: grid;
+    padding: 8rem 0rem;
     justify-content: center;
     align-items: center;
     .redio-buttons-div {
-      display: flex;
-      gap: 30px;
+      margin: 50px 0px;
+      .newsLatter-text {
+        h5 {
+          @include h5;
+        }
+      }
+      display: grid;
+      gap: 15px;
+      @include lg {
+        display: flex;
+        gap: 55px;
+      }
+      @include md {
+        display: flex;
+        gap: 55px;
+      }
     }
+    .checkbox-wrapper {
+      display: grid;
+      gap: 10px;
+      .checkboxElem {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        label {
+          @include text-s;
+        }
+      }
+    }
+    .dontMiss-text {
+      display: flex;
+      gap: 15px;
+      h2 {
+        @include h2;
+      }
+    }
+  }
+
+  //BUTTON STYLING
+  .newsPage-input-btn {
+    display: flex;
+    .input-container-news {
+      display: flex;
+      flex: 1;
+      background-color: #fff;
+      margin-right: 20px;
+      align-items: center;
+      border: 1px solid $gray-400;
+      border-radius: 3px;
+      overflow: hidden;
+      .left-section-news {
+        display: flex;
+        align-items: center;
+        padding: 8px;
+        i {
+          color: #555;
+        }
+      }
+    }
+    input {
+      border: none;
+      outline: none;
+      width: 200px;
+      padding: 10px;
+      background-color: transparent;
+    }
+    .subscribe-button-news {
+      background-color: $primary;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      cursor: pointer;
+    }
+  }
+  //BUTTON STYLING
+  p {
+    margin-top: 30px;
+    @include text-m;
   }
 }

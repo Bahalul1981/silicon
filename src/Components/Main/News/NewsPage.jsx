@@ -2,6 +2,7 @@ import React from "react";
 import HeaderPage from "../../Header/HeaderPage";
 import FooterPage from "../../Footer/FooterPage";
 import NewsPageTwo from "./NewsPageTwo";
+import style from "../../../style/assets/Image/news/Group.svg";
 
 function NewsPage() {
   return (
@@ -10,51 +11,61 @@ function NewsPage() {
       <div className="newspage-wrapper">
         <NewsPageTwo />
         <div className="dont-miss-wrapper">
-          <div className="text">
-            <h2>Don´t Want to Miss Anything</h2>
-            <span>
-              <img src="" alt="logo" />
-            </span>
+          <div className="dontMiss-text">
+            <h2>Don´t Want to Miss Anything?</h2>
+
+            <img src={style} alt="logo" />
           </div>
           <div className="redio-buttons-div">
-            <div className="">
-              <h3>Sign up for Newsletters</h3>
+            <div className="newsLatter-text">
+              <h5>
+                Sign up for
+                <br /> Newsletters
+              </h5>
             </div>
-            <div>
-              <div>
+            <div className="checkbox-wrapper">
+              <div className="checkboxElem">
                 <input type="checkbox" id="myCheckbox" />
                 <label htmlFor="myCheckbox"> Daily Newsletter</label>
               </div>
-              <div>
+              <div className="checkboxElem">
                 <input type="checkbox" id="myCheckbox" />
                 <label htmlFor="myCheckbox"> Event Updates</label>
               </div>
             </div>
-            <div className="">
-              <div>
+            <div className="checkbox-wrapper">
+              <div className="checkboxElem">
                 <input type="checkbox" id="myCheckbox" />
                 <label htmlFor="myCheckbox"> Daily Newsletter</label>
               </div>
-              <div>
+              <div className="checkboxElem">
                 <input type="checkbox" id="myCheckbox" />
                 <label htmlFor="myCheckbox"> Event Updates</label>
               </div>
             </div>
-            <div className="">
-              <div>
+            <div className="checkbox-wrapper">
+              <div className="checkboxElem">
                 <input type="checkbox" id="myCheckbox" />
                 <label htmlFor="myCheckbox"> Daily Newsletter</label>
               </div>
-              <div>
+              <div className="checkboxElem">
                 <input type="checkbox" id="myCheckbox" />
                 <label htmlFor="myCheckbox"> Event Updates</label>
               </div>
             </div>
           </div>
-          <div className="subscribe">
-            <input type="text" placeholder="Your Email" />
-            <button className="subscribe-btn">Subscrube</button>
+          <div className="newsPage-input-btn">
+            <div className="input-container-news">
+              <div className="left-section-news">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div>
+                <input type="email" placeholder="Your Email" />
+              </div>
+            </div>
+            <button className="subscribe-button-news">Subscribe *</button>
           </div>
+
           <p>
             * Yes, I agree to the <a href="#">terms</a> and{" "}
             <a href="#">privacy policy</a>
