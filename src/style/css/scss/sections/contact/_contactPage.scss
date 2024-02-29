@@ -183,6 +183,12 @@
 // API ELEMENTS STYLING
 .news-page-wrapper {
   .web-api {
+    .dataLoadingText {
+      @include h4;
+      display: flex;
+      justify-content: center;
+      color: $gray-700;
+    }
     margin: 50px 80px;
     display: grid;
     justify-content: center;
@@ -214,6 +220,7 @@
       .news-title {
         @include h5;
         margin: 15px 15px;
+        color: $gray-800;
       }
       .horizontal-line {
         margin: 10px 15px;
@@ -222,20 +229,11 @@
       .lower-section {
         margin: 15px 15px;
         display: flex;
+        align-items: center;
         gap: 20px;
-        
+        .author-name {
+          @include text-m;
         }
-      }
-    }
-
-    @media (max-width: 768px) {
-      .upper-section img {
-        width: 100px;
-      }
-
-      .lower-section img {
-        width: 40px;
-        height: 40px;
       }
     }
   }
