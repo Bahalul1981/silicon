@@ -29,7 +29,7 @@
 // SECTION PART
 
 .app-feature-main-div {
-  padding: 0px 15px;
+  padding: 30px 15px;
   .features-secton {
     margin-top: 100px;
 
@@ -64,8 +64,10 @@
       .text-and-logo {
         margin-top: 100px;
         display: grid;
-        @include lg {
+        @include xl {
           grid-template-columns: 1fr 1fr;
+          .text-and-logo-B {
+          }
         }
       }
       .text-and-logo-A,
@@ -92,6 +94,12 @@
               @include text-lg;
             }
           }
+        }
+      }
+      .text-and-logo-B {
+        margin-top: 90px;
+        @include xl {
+          margin-top: 0px;
         }
       }
     }

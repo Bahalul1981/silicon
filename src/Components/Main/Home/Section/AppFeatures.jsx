@@ -92,7 +92,7 @@ function AppFeatures() {
                 </div>
               </div>
             </div>
-            <div className="text-and-logo-B" style={{ marginTop: "90px" }}>
+            <div className="text-and-logo-B">
               <div className="easyPayment">
                 <a href="#">
                   <img src={data} alt="" />

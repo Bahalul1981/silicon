@@ -6,7 +6,7 @@ function ErrorMassege() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setVisible(false);
-    }, 3000);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, []);
