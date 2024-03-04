@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import HeaderPage from "../../Header/HeaderPage";
 import appStore from "../../../style/assets/Image/appstore.svg";
 import playStore from "../../../style/assets/Image/googleplay.svg";
+import ErrorMassege from "../../Library/ErrorMassege";
 import {
   AppFeature,
   HowDoesItWork,
@@ -10,7 +11,13 @@ import {
   FooterHome,
 } from "../Home/Section/index";
 import MobileImg from "../../../style/assets/Image/mobile.svg";
+
 function HomePage() {
+  const [errorMassege, setErrorMassege] = useState(false);
+  const handleErrorMassege = () => {
+    setErrorMassege(true);
+    setTimeout(() => setErrorMassege(false), 1000);
+  };
   return (
     <div className="bahalul">
       <HeaderPage />
@@ -36,8 +43,11 @@ function HomePage() {
                 <div className="round-cirkel">
                   <i class="fa-solid fa-chevron-down"></i>
                 </div>
-                <span>Discover more</span>
+                <span className="discover-more" onClick={handleErrorMassege}>
+                  Discover more
+                </span>
               </a>
+              {errorMassege && <ErrorMassege />}
             </div>
           </div>
 

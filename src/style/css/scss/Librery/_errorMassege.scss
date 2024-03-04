@@ -1,0 +1,16 @@
+.faield-message {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: absolute;
+  bottom: 50px;
+  left: 40%;
+  background-color: rgba(212, 212, 210, 0.755);
+  padding: 10px 40px;
+  border-radius: 7px;
+
+  .success-text {
+    @include text-m;
+    color: red;
+  }
+}
