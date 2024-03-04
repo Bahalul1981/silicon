@@ -87,7 +87,9 @@ function ContactPage() {
               </div>
             </div>
 
-            <button className="button-primary">Make an appointment</button>
+            <button className="button-primary contact-page-button">
+              Make an appointment
+            </button>
           </div>
         </div>
       </div>

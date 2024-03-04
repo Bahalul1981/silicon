@@ -83,10 +83,15 @@
       h2 {
         padding-bottom: 30px;
       }
-      margin-top: 40px;
+      display: none;
       display: grid;
       grid-template-columns: 1fr;
-      width: 500px;
+
+      @include md {
+        width: 500px;
+        margin-top: 70px;
+      }
+
       height: 620px;
       max-width: 100%;
       background-color: #fff;
@@ -94,7 +99,10 @@
       padding: 40px 45px;
       box-sizing: border-box;
       @include shadow-m;
-      margin-bottom: 40px;
+      margin-top: 40px;
+    }
+    .contact-page-button {
+      min-width: 100%;
     }
 
     .contact-form-validation h2 {
