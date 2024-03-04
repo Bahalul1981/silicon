@@ -69,8 +69,11 @@
         }
       }
       .sub-text {
-        display: flex;
+        display: grid;
         justify-content: center;
+        @include xl {
+          display: flex;
+        }
 
         .textOne,
         .textTwo {

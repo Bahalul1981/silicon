@@ -13,9 +13,14 @@
     margin-top: 5rem;
   }
   .imageses {
+    .arrow-image,
     .imageOne,
     .imageTwo,
     .imageThree {
+      margin-top: 30px;
+      @include xl {
+        margin-top: 0px;
+      }
       img {
         max-width: 100%;
         height: auto;

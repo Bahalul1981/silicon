@@ -5,9 +5,11 @@
   position: absolute;
   bottom: 50px;
   left: 40%;
-  background-color: rgba(212, 212, 210, 0.755);
+  background-color: #ad020219;
+  @include shadow-m;
   padding: 10px 70px;
   border-radius: 7px;
+  z-index: 9999;
 
   .success-text {
     @include text-m;

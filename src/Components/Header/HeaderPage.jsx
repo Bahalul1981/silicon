@@ -6,8 +6,15 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import ErrorMassege from "../Library/ErrorMassege";
 function HeaderPage() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const [errorMassege, setErrorMassege] = useState(false);
+  const handleErrorMassege = () => {
+    setErrorMassege(true);
+    setTimeout(() => setErrorMassege(false), 1000);
+  };
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -43,12 +50,12 @@ function HeaderPage() {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/overview" onClick={closeMenu}>
+                    <Link to="/error" onClick={closeMenu}>
                       Overview
                     </Link>
                   </li>
                   <li>
-                    <Link to="/features" onClick={closeMenu}>
+                    <Link to="/error" onClick={closeMenu}>
                       Features
                     </Link>
                   </li>
@@ -62,9 +69,9 @@ function HeaderPage() {
                       Contact
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link to="/error">Error</Link>
-                  </li>
+                  </li> */}
                 </ul>
               </nav>
             </div>
@@ -73,7 +80,7 @@ function HeaderPage() {
           <div className="toggle-login">
             <div className="Light-Dark">
               <p>Light</p>
-              <div className="theme-switch">
+              <div className="theme-switch" onClick={handleErrorMassege}>
                 <label>
                   <input type="checkbox" />
                   <span className="slider round"></span>
@@ -82,11 +89,16 @@ function HeaderPage() {
               <p>Dark</p>
             </div>
             <div>
-              <button className="button-primary" onClick={goToSigneInpage}>
-                <FontAwesomeIcon icon={faUser} className="fa-icon" />
+              <button className="button-primary">
+                <FontAwesomeIcon
+                  icon={faUser}
+                  className="fa-icon"
+                  onClick={goToSigneInpage}
+                />
                 Sign in / up
               </button>
             </div>
+            {errorMassege && <ErrorMassege />}
           </div>
 
           <div
