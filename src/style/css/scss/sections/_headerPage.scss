@@ -3,6 +3,7 @@
 @import "../components/toggle-switch-btn";
 @import "../components/buttons";
 @import "../core/typhographt";
+@import "../core/media";
 
 header .header-container {
   @include BasicFlexContainer;
@@ -71,7 +72,7 @@ header .header-container {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@include xl {
   header .header-container {
     .navigation-bar {
       ul {
@@ -86,6 +87,48 @@ header .header-container {
     }
     .burgerMenue {
       display: none;
+    }
+  }
+}
+@include sm {
+  header .header-container {
+    .navigation-bar {
+      text-decoration: none;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 50%;
+      height: 100%;
+      transition: left 0.3s ease;
+      z-index: 9999;
+      &.open {
+        left: 0;
+      }
+
+      ul {
+        height: 90vh;
+        display: grid;
+        margin: 10px 5px;
+        align-items: center;
+        border-radius: 10px;
+        background: rgba(232, 231, 231, 0.901);
+
+        li {
+          list-style: none;
+          a {
+            font-weight: bold;
+            color: black;
+            display: flex;
+            text-decoration: none;
+          }
+          & :hover {
+            font-size: 22px;
+            font-weight: bold;
+
+            color: $primary;
+          }
+        }
+      }
     }
   }
 }

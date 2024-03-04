@@ -1,7 +1,7 @@
 @import "../core/colors";
 @mixin button {
   display: flex;
-  padding: 12px 12px;
+  padding: 10px 12px;
   justify-content: center;
   align-items: center;
   gap: 12px;
@@ -22,6 +22,7 @@
   background: $primary;
   border: none;
   cursor: pointer;
+  min-width: 120px;
 
   &:hover {
     text-decoration: none;
@@ -94,22 +95,23 @@ a.buttion-circle {
   transition: all 0.15s ease-in-out;
 }
 
-.login-logout {
-  background-color: $primary;
-  color: #fff;
-  border: none;
-  padding: 9px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 5px;
+// .login-logout {
+//   background-color: $primary;
+//   min-width: 120px;
+//   color: #fff;
+//   border: none;
+//   padding: 9px 15px;
+//   border-radius: 5px;
+//   cursor: pointer;
+//   display: flex;
+//   align-items: center;
+//   gap: 5px;
 
-  &:hover {
-    background-color: $primary;
-  }
+//   &:hover {
+//     background-color: $primary;
+//   }
 
-  .fa-icon {
-    font-size: 12px;
-  }
-}
+//   .fa-icon {
+//     font-size: 12px;
+//   }
+// }
