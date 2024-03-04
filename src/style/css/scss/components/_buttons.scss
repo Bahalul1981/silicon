@@ -82,17 +82,13 @@ a.buttion-circle {
 }
 .cirkel-upp {
   @include circle-button;
-  color: #fff;
-  background: #6366f1;
-  border: none;
-  transition: all 0.15s ease-in-out;
+  background-color: $gradient-primary;
+  color: $gray-100;
 }
 .cirkel-down {
   @include circle-button;
-  color: $gray-900;
-  background: $gray-100;
-  border: none;
-  transition: all 0.15s ease-in-out;
+  background-color: $gray-200;
+  color: $gray-700;
 }
 
 // .login-logout {
