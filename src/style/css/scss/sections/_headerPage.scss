@@ -24,7 +24,6 @@ header .header-container {
     text-decoration: none;
     ul {
       display: none;
-      gap: 2rem;
 
       li {
         font-size: 18px;
@@ -98,7 +97,6 @@ header .header-container {
       top: 0;
       left: -100%;
       width: 50%;
-      height: 100%;
       transition: left 0.3s ease;
       z-index: 9999;
       &.open {
@@ -106,18 +104,18 @@ header .header-container {
       }
 
       ul {
-        height: 90vh;
         display: grid;
-        margin: 10px 5px;
         align-items: center;
-        border-radius: 10px;
-        background: rgba(232, 231, 231, 0.901);
+        border-radius: 5px;
+        background: rgba(5, 15, 122, 0.865);
 
         li {
+          margin: 60px 0px;
+
           list-style: none;
           a {
             font-weight: bold;
-            color: black;
+            color: $gray-100;
             display: flex;
             text-decoration: none;
           }

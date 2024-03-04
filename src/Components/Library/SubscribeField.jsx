@@ -1,6 +1,8 @@
-import React from "react";
-
 function SubscribeField() {
+  const handleErrorMassege = () => {
+    alert("Försöket misslyckades");
+    window.location.href = "/error";
+  };
   return (
     <div className="email-subscription">
       <div className="input-wrapper">
@@ -9,7 +11,11 @@ function SubscribeField() {
         </div>
         <input type="email" placeholder="Your Email" />
       </div>
-      <button type="submit" className="Subscribe-btn">
+      <button
+        type="submit"
+        className="Subscribe-btn"
+        onClick={handleErrorMassege}
+      >
         Subscribe
       </button>
     </div>

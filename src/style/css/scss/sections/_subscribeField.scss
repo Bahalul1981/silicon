@@ -6,11 +6,14 @@
     background-color: $primary;
     color: white;
     border: none;
-
-    padding: 8px 12px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 9px 12px;
     cursor: pointer;
   }
   .input-wrapper {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     display: flex;
     align-items: center;
     border: 1px solid #ccc;

@@ -16,7 +16,10 @@ function ErrorPage() {
           <img src={erroLogo} alt="404" />
           <h2>Ooops!</h2>
           <p>The page you are looking for is not available</p>
-          <button className="back-to-main login-logout" onClick={goToHomepage}>
+          <button
+            className="back-to-main button-primary"
+            onClick={goToHomepage}
+          >
             <img src={vector} alt="" />
             <span>Go to homepage</span>
           </button>

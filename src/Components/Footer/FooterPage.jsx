@@ -30,9 +30,8 @@ function FooterPage() {
               <div>
                 <input type="email" placeholder="Your Email" />
               </div>
-
-              <button className="subscribe-button-footer">Subscribe</button>
             </div>
+            <button className="subscribe-button-footer">Subscribe</button>
           </div>
         </div>
         <div className="Footer">
