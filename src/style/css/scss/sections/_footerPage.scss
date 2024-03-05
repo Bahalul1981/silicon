@@ -3,22 +3,9 @@
   background-color: $dark;
   color: #fff;
   display: grid;
-  @include md {
-    display: flex;
-  }
-  @include lg {
-    display: flex;
-    .logo-subcribe {
-      padding-bottom: 80px;
-      flex: 1;
-      display: grid;
-      justify-content: center;
-    }
-    .footer-links {
-      flex: 1;
-    }
-  }
-  @include md {
+  padding: 80px 0px;
+
+  @include xl {
     display: flex;
     .logo-subcribe {
       flex: 1;
@@ -28,13 +15,14 @@
     }
   }
   .logo-subcribe {
-    margin: 0px 15px;
-    margin-top: 70px;
+    display: grid;
+    justify-content: center;
+    padding: 0px 10px;
+    align-items: center;
+
     .footer-logo {
       display: flex;
       gap: 8px;
-      align-items: center;
-      justify-content: center;
 
       @include lg {
         justify-content: flex-start;
@@ -45,7 +33,6 @@
       p {
         margin-top: 30px;
         display: flex;
-        justify-content: center;
         @include text-s;
         color: $gray-500;
         @include lg {
@@ -60,7 +47,6 @@
       margin-top: 40px;
       display: grid;
       gap: 7px;
-      justify-content: center;
       @include lg {
         justify-content: flex-start;
       }
@@ -75,6 +61,7 @@
       .input-wrapper-footer {
         display: flex;
         .input-container-footer {
+          width: 250px;
           display: flex;
           align-items: center;
           border: 1px solid #817d7d;
@@ -101,7 +88,7 @@
         .subscribe-button-footer {
           color: white;
           border: none;
-          padding: 10px 18px;
+          padding: 10px 24px;
           cursor: pointer;
           border-top-right-radius: 5px;
           border-bottom-right-radius: 5px;
@@ -114,7 +101,6 @@
       p {
         color: $gray-500;
         display: flex;
-        justify-content: center;
         @include lg {
           justify-content: flex-start;
         }
@@ -129,22 +115,16 @@
   }
   .footer-links {
     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     justify-content: center;
+
     @include lg {
       display: flex;
-      justify-content: flex-start;
-      gap: 50px;
-      .link-div-three {
-        margin-left: 40px;
-      }
+      justify-content: center;
     }
     @include md {
       display: flex;
-      justify-content: flex-start;
-      gap: 50px;
-      .link-div-three {
-        margin-left: 40px;
-      }
+      justify-content: center;
     }
   }
   .link-div,

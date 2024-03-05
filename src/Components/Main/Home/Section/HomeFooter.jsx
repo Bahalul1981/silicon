@@ -5,12 +5,10 @@ import siliconLogo from "../../../../style/assets/Image/SiliconLogo.svg";
 import siliconText from "../../../../style/assets/Image/Silicon.png";
 import apple from "../../../../style/assets/Image/appstore.svg";
 import android from "../../../../style/assets/Image/googleplay.svg";
-import faceBook from "../../../../style/assets/Image/HomePageFooter/FaceBook.svg";
+import faceBook from "../../../../style/assets/Image/HomePageFooter/S.jpg";
 import twiter from "../../../../style/assets/Image/HomePageFooter/Twiter.svg";
 import instagram from "../../../../style/assets/Image/HomePageFooter/Instagram.svg";
 import youtube from "../../../../style/assets/Image/HomePageFooter/youtube.svg";
-import FooterPage from "../../../Footer/FooterPage";
-import SubscribeField from "../../../Library/SubscribeField";
 
 function HomeFooter() {
   return (
