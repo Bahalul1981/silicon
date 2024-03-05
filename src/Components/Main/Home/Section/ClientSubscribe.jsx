@@ -1,8 +1,6 @@
-import React, { useState } from "react";
 import { ArrowDown, ArrowUpp } from "../../../Library/CommonIcons";
 import cellPhonceIcon from "../../../../style/assets/Image/MakeYourMoney/whatsupcell.svg";
 import smsIcon from "../../../../style/assets/Image/MakeYourMoney/smsicon.svg";
-import Subscribe from "./Subscribe";
 
 function ClientSubscribe() {
   return (
