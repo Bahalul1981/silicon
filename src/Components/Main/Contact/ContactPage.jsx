@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import HeaderPage from "../../Header/HeaderPage";
 import FooterPage from "../../Footer/FooterPage";
 import home from "../../../style/assets/Image/Contact/home.svg";
@@ -9,6 +9,56 @@ import addHuman from "../../../style/assets/Image/Contact/add-group.svg";
 import MediaCenter from "./MediaCenter";
 
 function ContactPage() {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    specialist: "",
+    date: "",
+    time: "",
+  });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch(
+        // " https://kyhnet23-assignment.azurewebsites.net",
+        "https://kyhnet23-assignment.azurewebsites.net/api/book-appointment",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            fullName: formData.fullName,
+            email: formData.email,
+            specialist: formData.specialist,
+            date: formData.date,
+            time: formData.time,
+          }),
+        }
+      );
+
+      if (response.ok) {
+        alert("Data has been submitted successfully.");
+      } else {
+        console.log(formData);
+        throw new Error("Failed to submit data.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Failed to submit data.");
+    }
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
   return (
     <>
       <div className="contactPage-wrapper">
@@ -63,33 +113,71 @@ function ContactPage() {
               </div>
             </div>
           </div>
+
           <div className="contact-form-validation">
             <h2>Get Online Consultation</h2>
-            <label htmlFor="fullName">Full name</label>
-            <input type="text" id="fullName" />
-            <label htmlFor="email">Email address</label>
-            <input type="text" id="email" />
-            <label htmlFor="specialist">Specialist</label>
-            <select name="" id="specialist">
-              <option value="1">Specialist1</option>
-              <option value="2">Specialist2</option>
-              <option value="3">Specialist3</option>
-            </select>
 
-            <div class="datetime-container">
-              <div class="date-time">
-                <label htmlFor="date">Date</label>
-                <input type="date" id="date" />
-              </div>
-              <div class="date-time">
-                <label htmlFor="time">Time</label>
-                <input type="time" id="time" />
-              </div>
-            </div>
+            {/* // FORM VALIDIITON */}
 
-            <button className="button-primary contact-page-button">
-              Make an appointment
-            </button>
+            <form onSubmit={handleSubmit}>
+              <label htmlFor="fullName">Full name</label>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                value={formData.fullName}
+                onChange={handleChange}
+                required
+              />
+              <label htmlFor="email">Email address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+              <label htmlFor="specialist">Specialist</label>
+              <select
+                name="specialist"
+                id="specialist"
+                value={formData.specialist}
+                onChange={handleChange}
+              >
+                <option value="1"></option>
+                <option value="2">Specialist2</option>
+                <option value="3">Specialist3</option>
+              </select>
+
+              <div class="datetime-container">
+                <div className="date-time">
+                  <label htmlFor="date">Date</label>
+                  <input
+                    type="date"
+                    name="date"
+                    id="date"
+                    value={formData.date}
+                    onChange={handleChange}
+                  />
+                </div>
+
+                <div className="date-time">
+                  <label htmlFor="time">Time</label>
+                  <input
+                    type="time"
+                    name="time"
+                    id="time"
+                    value={formData.time}
+                    onChange={handleChange}
+                  />
+                </div>
+              </div>
+
+              <button className="button-primary contact-page-button">
+                Make an appointment
+              </button>
+            </form>
           </div>
         </div>
       </div>
