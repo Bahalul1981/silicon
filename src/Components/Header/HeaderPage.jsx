@@ -8,9 +8,12 @@ import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import ErrorMassege from "../Library/ErrorMassege";
 function HeaderPage() {
+  const hadleSingIn = () => {
+    window.location.href = "/contact";
+  };
   const [menuOpen, setMenuOpen] = useState(false);
-
   const [errorMassege, setErrorMassege] = useState(false);
+
   const handleErrorMassege = () => {
     setErrorMassege(true);
     setTimeout(() => setErrorMassege(false), 1000);
@@ -24,9 +27,6 @@ function HeaderPage() {
     setMenuOpen(false);
   };
 
-  const goToSigneInpage = () => {
-    window.location.href = "/contact";
-  };
   return (
     <>
       <header>
@@ -69,9 +69,6 @@ function HeaderPage() {
                       Contact
                     </Link>
                   </li>
-                  {/* <li>
-                    <Link to="/error">Error</Link>
-                  </li> */}
                 </ul>
               </nav>
             </div>
@@ -89,13 +86,9 @@ function HeaderPage() {
               <p>Dark</p>
             </div>
             <div>
-              <button className="button-primary">
-                <FontAwesomeIcon
-                  icon={faUser}
-                  className="fa-icon"
-                  onClick={goToSigneInpage}
-                />
-                Sign in / up
+              <button className="button-primary" onClick={hadleSingIn}>
+                <FontAwesomeIcon icon={faUser} className="fa-icon" />
+                Sign in / upppp
               </button>
             </div>
             {errorMassege && <ErrorMassege />}

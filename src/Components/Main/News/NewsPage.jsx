@@ -5,6 +5,9 @@ import NewsPageTwo from "./NewsPageTwo";
 import style from "../../../style/assets/Image/news/Group.svg";
 
 function NewsPage() {
+  const HandleSubmit = () => {
+    alert("Page was not found");
+  };
   return (
     <div>
       <HeaderPage />
@@ -63,7 +66,9 @@ function NewsPage() {
                 <input type="email" placeholder="Your Email" />
               </div>
             </div>
-            <button className="subscribe-button-news">Subscribe *</button>
+            <button className="subscribe-button-news" onClick={HandleSubmit}>
+              Subscribe *
+            </button>
           </div>
 
           <p>

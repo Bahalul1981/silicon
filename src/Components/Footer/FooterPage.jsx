@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../style/assets/Image/Silicon.svg";
 import Silicon from "../../style/assets/Image/SiliconLogo.svg";
+import ErrorMassegeContact from "../Library/ErrorMassegeContact";
 function FooterPage() {
+  const HandleErro = () => {
+    alert("Page was not found");
+  };
   return (
     <div className="footer-main-div-wrapper">
       <div className="logo-subcribe">
@@ -31,7 +35,9 @@ function FooterPage() {
                 <input type="email" placeholder="Your Email" />
               </div>
             </div>
-            <button className="subscribe-button-footer">Subscribe</button>
+            <button className="subscribe-button-footer" onClick={HandleErro}>
+              Subscribe
+            </button>
           </div>
         </div>
         <div className="Footer">
