@@ -201,7 +201,9 @@ function ContactPage() {
                 Make an appointment
               </button>
             </form>
-            {successMessage && <SuccessMessage />}
+            {successMessage && (
+              <SuccessMessage successMessage="Data was successfully submitted" />
+            )}
             {failedMessage && (
               <ErrorMassegeContact errorMessage="Data was failed to submit" />
             )}
