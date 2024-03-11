@@ -202,7 +202,9 @@ function ContactPage() {
               </button>
             </form>
             {successMessage && <SuccessMessage />}
-            {failedMessage && <ErrorMassegeContact />}
+            {failedMessage && (
+              <ErrorMassegeContact errorMessage="Data was failed to submit" />
+            )}
           </div>
         </div>
       </div>
