@@ -1,0 +1,26 @@
+.success-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(5, 86, 16, 0.144);
+  @include shadow-l;
+  padding: 10px 40px;
+  border-radius: 7px;
+  border: 1px solid #d0e9c6;
+  min-width: 400px;
+}
+
+.success-text {
+  font-size: 1.25rem;
+  color: rgb(3, 52, 3);
+}
+
+.fa-regular.fa-face-smile {
+  font-size: 20px;
+  margin-left: 10px;
+}

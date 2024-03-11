@@ -1,0 +1,26 @@
+.error-contact-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(5, 86, 16, 0.144);
+  @include shadow-l;
+  padding: 10px 40px;
+  border-radius: 7px;
+  border: 1px solid #d0e9c6;
+  min-width: 400px;
+  .failed-text {
+    font-size: 1.25rem;
+    color: rgb(161, 4, 4);
+  }
+
+  .fa-solid .fa-face-sad-tear {
+    font-size: 20px;
+    color: rgb(161, 4, 4);
+    margin-left: 10px;
+  }
+}

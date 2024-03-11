@@ -7,8 +7,12 @@ import date from "../../../style/assets/Image/Contact/date.svg";
 import email from "../../../style/assets/Image/Contact/bx-envelope.svg";
 import addHuman from "../../../style/assets/Image/Contact/add-group.svg";
 import MediaCenter from "./MediaCenter";
+import SuccessMessage from "../../Library/SuccessMassege";
+import ErrorMassegeContact from "../../Library/ErrorMassegeContact";
 
 function ContactPage() {
+  const [successMessage, setSuccessMessage] = useState(false);
+  const [failedMessage, setFailedMessage] = useState(false);
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -22,7 +26,6 @@ function ContactPage() {
 
     try {
       const response = await fetch(
-        // " https://kyhnet23-assignment.azurewebsites.net",
         "https://kyhnet23-assignment.azurewebsites.net/api/book-appointment",
         {
           method: "POST",
@@ -40,14 +43,34 @@ function ContactPage() {
       );
 
       if (response.ok) {
-        alert("Data has been submitted successfully.");
+        setSuccessMessage(true);
+        setTimeout(() => {
+          setSuccessMessage(false);
+        }, 3000);
+        setFormData({
+          fullName: "",
+          email: "",
+          specialist: "",
+          date: "",
+          time: "",
+        });
       } else {
         console.log(formData);
         throw new Error("Failed to submit data.");
       }
     } catch (error) {
       console.error("Error:", error);
-      alert("Failed to submit data.");
+      setFailedMessage(true);
+      setTimeout(() => {
+        setFailedMessage(false);
+      }, 3000);
+      setFormData({
+        fullName: "",
+        email: "",
+        specialist: "",
+        date: "",
+        time: "",
+      });
     }
   };
 
@@ -178,6 +201,8 @@ function ContactPage() {
                 Make an appointment
               </button>
             </form>
+            {successMessage && <SuccessMessage />}
+            {failedMessage && <ErrorMassegeContact />}
           </div>
         </div>
       </div>
