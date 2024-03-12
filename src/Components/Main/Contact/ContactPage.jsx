@@ -76,9 +76,12 @@ function ContactPage() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const isValidEmail = emailPattern.test(value);
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
+      emailValid: name === "email" ? isValidEmail : prevData.emailValid,
     }));
   };
 
@@ -161,6 +164,9 @@ function ContactPage() {
                 onChange={handleChange}
                 required
               />
+              {formData.emailValid === false && (
+                <span style={{ color: "red" }}>Invalid email address</span>
+              )}
               <label htmlFor="specialist">Specialist</label>
               <select
                 name="specialist"
