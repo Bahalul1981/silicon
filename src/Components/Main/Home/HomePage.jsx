@@ -39,7 +39,7 @@ function HomePage() {
               </div>
             </div>
             <div className="discover-more">
-              <a href="#">
+              <a href="/error">
                 <div className="round-cirkel">
                   <i class="fa-solid fa-chevron-down"></i>
                 </div>

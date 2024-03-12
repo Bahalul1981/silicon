@@ -17,22 +17,22 @@ function AppFeatures() {
   return (
     <div className="app-feature-main-div">
       <div className="app-feature-logos">
-        <a href="#" className="box-logo">
+        <a href="/error" className="box-logo">
           <img src={logo1} alt="logo1" />
         </a>
-        <a href="#" className="box-logo">
+        <a href="/error" className="box-logo">
           <img src={logo2} alt="logo2" />
         </a>
-        <a href="#" className="box-logo">
+        <a href="/error" className="box-logo">
           <img src={logo3} alt="logo3" />
         </a>
-        <a href="#" className="box-logo">
+        <a href="/error" className="box-logo">
           <img src={logo4} alt="logo4" />
         </a>
-        <a href="#" className="box-logo">
+        <a href="/error" className="box-logo">
           <img src={logo5} alt="logo5" />
         </a>
-        <a href="#" className="box-logo">
+        <a href="/error" className="box-logo">
           <img src={logo6} alt="logo6" />
         </a>
       </div>
@@ -55,7 +55,7 @@ function AppFeatures() {
           <div className="text-and-logo">
             <div className="text-and-logo-A">
               <div className="easyPayment">
-                <a href="#">
+                <a href="/error">
                   <img src={easyPayment} alt="" />
                 </a>
 
@@ -68,7 +68,7 @@ function AppFeatures() {
                 </div>
               </div>
               <div className="easyPayment">
-                <a href="#">
+                <a href="/error">
                   <img src={cost} alt="" />
                 </a>
                 <div className="text">
@@ -80,7 +80,7 @@ function AppFeatures() {
                 </div>
               </div>
               <div className="easyPayment">
-                <a href="#">
+                <a href="/error">
                   <img src={regular} alt="" />
                 </a>
                 <div className="text">
@@ -94,7 +94,7 @@ function AppFeatures() {
             </div>
             <div className="text-and-logo-B">
               <div className="easyPayment">
-                <a href="#">
+                <a href="/error">
                   <img src={data} alt="" />
                 </a>
 
@@ -120,7 +120,7 @@ function AppFeatures() {
                 </div>
               </div>
               <div className="easyPayment">
-                <a href="#">
+                <a href="/error">
                   <img src={standerd} alt="" />
                 </a>
 

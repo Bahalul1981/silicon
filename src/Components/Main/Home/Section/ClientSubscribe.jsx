@@ -20,7 +20,7 @@ function ClientSubscribe() {
           <div className="question-logoOne">
             <img src={cellPhonceIcon} alt="" />
             <p className="question-p">Still have question?</p>
-            <a href="#">
+            <a href="/error">
               <p>Contact us</p>
               <span>
                 <i class="fa-solid fa-arrow-right"></i>
@@ -31,7 +31,7 @@ function ClientSubscribe() {
             {" "}
             <img src={smsIcon} alt="" />
             <p className="question-p">Don't like phone calls?</p>
-            <a href="#" className="green-sms">
+            <a href="/error" className="green-sms">
               <p>Contact us</p>
               <span>
                 <i class="fa-solid fa-arrow-right"></i>

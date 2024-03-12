@@ -72,8 +72,8 @@ function NewsPage() {
           </div>
 
           <p>
-            * Yes, I agree to the <a href="#">terms</a> and{" "}
-            <a href="#">privacy policy</a>
+            * Yes, I agree to the <a href="/error">terms</a> and{" "}
+            <a href="/error">privacy policy</a>
           </p>
         </div>
         <FooterPage />

@@ -57,23 +57,23 @@ function HomeFooter() {
         </div>
         <div className="socialmedia-icon">
           <div className="link-icon">
-            <a href="#">
+            <a href="/error">
               {" "}
               <img src={faceBook} alt="facebook" />
             </a>
           </div>
           <div className="link-icon">
-            <a href="#">
+            <a href="/error">
               <img src={twiter} alt="twiter" />
             </a>
           </div>
           <div className="link-icon">
-            <a href="#">
+            <a href="/error">
               <img src={instagram} alt="instram" />
             </a>
           </div>
           <div className="link-icon">
-            <a href="#">
+            <a href="/error">
               {" "}
               <img src={youtube} alt="youtube" />
             </a>

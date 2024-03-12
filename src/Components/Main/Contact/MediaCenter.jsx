@@ -71,19 +71,19 @@ function MediaCenter() {
           </div>
         </div>
         <div className="medical-center-link-icon">
-          <a href="#">
+          <a href="/error">
             {" "}
             <img src={facebook} alt="facebook" />
           </a>
-          <a href="#">
+          <a href="/error">
             {" "}
             <img src={twiter} alt="twiter" />
           </a>
-          <a href="#">
+          <a href="/error">
             {" "}
             <img src={instagram} alt="instagram" />
           </a>
-          <a href="#">
+          <a href="/error">
             {" "}
             <img src={youtube} alt="youtube" />
           </a>

@@ -112,7 +112,7 @@ function ContactPage() {
                   Please feel free to drop us a line. We will <br></br> respond
                   as soon as possible.
                 </p>
-                <a href="#">
+                <a href="/error">
                   Leave a message{" "}
                   <span>
                     <i class="fa-solid fa-arrow-right"></i>
@@ -130,7 +130,7 @@ function ContactPage() {
                   Sit ac ipsum leo lorem magna nunc mattis <br></br> maecenas
                   non vestibulum.
                 </p>
-                <a href="#">
+                <a href="/error">
                   Send an application{" "}
                   <span>
                     <i class="fa-solid fa-arrow-right"></i>

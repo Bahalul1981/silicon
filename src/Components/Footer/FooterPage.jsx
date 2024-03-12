@@ -51,61 +51,61 @@ function FooterPage() {
         <div className="link-div">
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a href="/error">Home</a>
             </li>
             <li>
-              <a href="#">Service</a>{" "}
+              <a href="/error">Service</a>{" "}
             </li>
             <li>
-              <a href="#">Our client</a>
+              <a href="/error">Our client</a>
             </li>
             <li>
-              <a href="#">Testimonials</a>
+              <a href="/error">Testimonials</a>
             </li>
             <li>
-              <a href="#">News</a>
+              <a href="/error">News</a>
             </li>
             <li>
-              <a href="#"></a>
+              <a href="/error"></a>
             </li>
             <li>
-              <a href="#"></a>
+              <a href="/error"></a>
             </li>
             <li>
-              <a href="#"></a>
+              <a href="/error"></a>
             </li>
             <li>
-              <a href="#">Terms & Condiitons</a>
+              <a href="/error">Terms & Condiitons</a>
             </li>
             <li>
-              <a href="#">Privacy Policy</a>
+              <a href="/error">Privacy Policy</a>
             </li>
           </ul>
         </div>
         <div className="link-div">
           <ul>
             <li>
-              <a href="#">Facebook</a>
+              <a href="/error">Facebook</a>
             </li>
             <li>
-              <a href="#">Linkdin</a>
+              <a href="/error">Linkdin</a>
             </li>
             <li>
-              <a href="#">Twitter</a>
+              <a href="/error">Twitter</a>
             </li>
             <li>
-              <a href="#">Instragram</a>
+              <a href="/error">Instragram</a>
             </li>
           </ul>
         </div>
         <div className="link-div-three">
           <ul>
             <li>
-              <a href="#">Contact Us</a>
+              <a href="/error">Contact Us</a>
             </li>
             <div className="silicon-email">
               {" "}
-              <a href="#">silicon@gmail.com</a>
+              <a href="/error">silicon@gmail.com</a>
             </div>
           </ul>
         </div>

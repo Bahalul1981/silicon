@@ -31,7 +31,7 @@ function NewsPageTwo() {
         <div className="news-icons">
           <img src={homeIcons} alt="home" />
           <img src={arrowIcons} alt="arrow" />
-          <a href="#">
+          <a href="/error">
             <img src={newsIcons} alt="news" />
           </a>
         </div>

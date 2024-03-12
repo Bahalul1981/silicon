@@ -4,7 +4,7 @@ function ArrowRight() {
   return (
     <div>
       <div className="iconTwo">
-        <a href="#">
+        <a href="/error">
           <div className="round-cirkel">
             <i className="fa-solid fa-chevron-right"></i>
           </div>
@@ -17,7 +17,7 @@ function ArrowRight() {
 function Arrowleft() {
   return (
     <div className="iconOne">
-      <a href="#">
+      <a href="/error">
         <div className="round-cirkel">
           <i className="fa-solid fa-chevron-left"></i>
         </div>
@@ -28,7 +28,7 @@ function Arrowleft() {
 function ArrowUpp() {
   return (
     <div className="iconOne">
-      <a href="#">
+      <a href="/error">
         <div className="cirkel-upp">
           <i class="fa-solid fa-angle-up"></i>
         </div>
@@ -39,7 +39,7 @@ function ArrowUpp() {
 function ArrowDown() {
   return (
     <div className="cirkel-upp">
-      <a href="#">
+      <a href="/error">
         <div className="cirkel-down">
           <i class="fa-solid fa-chevron-down"></i>
         </div>
