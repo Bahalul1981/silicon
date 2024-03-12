@@ -93,7 +93,7 @@ function ContactPage() {
         <div className="contact-page-location">
           <img src={home} alt="home" />
           <img src={errow} alt="errow" />
-          <a href="">
+          <a href="/error">
             <img src={date} alt="currentPage" />
           </a>
         </div>

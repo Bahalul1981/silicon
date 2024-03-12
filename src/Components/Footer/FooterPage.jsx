@@ -66,15 +66,6 @@ function FooterPage() {
               <a href="/error">News</a>
             </li>
             <li>
-              <a href="/error"></a>
-            </li>
-            <li>
-              <a href="/error"></a>
-            </li>
-            <li>
-              <a href="/error"></a>
-            </li>
-            <li>
               <a href="/error">Terms & Condiitons</a>
             </li>
             <li>

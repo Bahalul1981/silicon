@@ -107,8 +107,8 @@ function AppFeatures() {
                 </div>
               </div>
               <div className="easyPayment">
-                <a href="">
-                  <img src={support} alt="" />
+                <a href="/">
+                  <img src={support} alt="support" />
                 </a>
 
                 <div className="text">
