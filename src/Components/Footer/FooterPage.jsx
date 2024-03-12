@@ -85,27 +85,27 @@ function FooterPage() {
         <div className="link-div">
           <ul>
             <li>
-              <a href="*">Facebook</a>
+              <a href="#">Facebook</a>
             </li>
             <li>
-              <a href="*">Linkdin</a>
+              <a href="#">Linkdin</a>
             </li>
             <li>
-              <a href="*">Twitter</a>
+              <a href="#">Twitter</a>
             </li>
             <li>
-              <a href="*">Instragram</a>
+              <a href="#">Instragram</a>
             </li>
           </ul>
         </div>
         <div className="link-div-three">
           <ul>
             <li>
-              <a href="*">Contact Us</a>
+              <a href="#">Contact Us</a>
             </li>
             <div className="silicon-email">
               {" "}
-              <a href="*">silicon@gmail.com</a>
+              <a href="#">silicon@gmail.com</a>
             </div>
           </ul>
         </div>
