@@ -1,7 +1,5 @@
-import React, { useState } from "react";
 import logo from "../../style/assets/Image/Silicon.svg";
 import Silicon from "../../style/assets/Image/SiliconLogo.svg";
-import ErrorMassegeContact from "../Library/ErrorMassegeContact";
 function FooterPage() {
   const HandleErro = () => {
     alert("Page was not found");
