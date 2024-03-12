@@ -12,6 +12,7 @@ header .header-container {
 
   .logo-and-text {
     display: flex;
+    flex: 1;
     align-items: center;
   }
   .logo-image {
@@ -38,14 +39,20 @@ header .header-container {
     }
   }
   .toggle-login {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+
     .Light-Dark {
-      p {
+      display: flex;
+      align-items: center;
+      .lightAndDark {
         @include text-lg;
       }
     }
     display: none;
-    align-items: center;
-    padding-left: 30px;
   }
   .toggle-login > div {
     margin-left: 40px;
@@ -57,13 +64,7 @@ header .header-container {
       padding-left: 5px;
     }
   }
-  .Light-Dark {
-    align-items: center;
-    display: flex;
-    div {
-      font-size: 16px;
-    }
-  }
+
   .toggle-login {
     .Signe-up {
       height: 32px;

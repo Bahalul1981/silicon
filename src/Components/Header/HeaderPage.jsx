@@ -75,15 +75,15 @@ function HeaderPage() {
           </div>
 
           <div className="toggle-login">
-            <div className="Light-Dark">
-              <p>Light</p>
+            <div className="Light-Dark ">
+              <div className="lightAndDark">light</div>
               <div className="theme-switch" onClick={handleErrorMassege}>
                 <label>
                   <input type="checkbox" />
                   <span className="slider round"></span>
                 </label>
               </div>
-              <p>Dark</p>
+              <div className="lightAndDark">Dark</div>
             </div>
             <div>
               <button className="button-primary" onClick={hadleSingIn}>
