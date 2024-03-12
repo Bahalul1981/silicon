@@ -5,14 +5,22 @@
   position: absolute;
   bottom: 50px;
   left: 40%;
-  background-color: #ad020219;
+  background-color: #ffffffd1;
+  border: 1px solid rgb(223, 221, 221);
   @include shadow-m;
-  padding: 10px 70px;
+  padding: 10px 50px;
   border-radius: 7px;
   z-index: 9999;
 
+  .fa-solid.fa-wrench {
+    color: rgb(189, 9, 9);
+    font-size: 20px;
+  }
+
   .success-text {
     @include text-m;
-    color: red;
+    color: rgb(189, 9, 9);
+    display: flex;
+    gap: 15px;
   }
 }
