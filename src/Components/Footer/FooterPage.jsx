@@ -1,8 +1,32 @@
+import { useState } from "react";
 import logo from "../../style/assets/Image/Silicon.svg";
 import Silicon from "../../style/assets/Image/SiliconLogo.svg";
+
 function FooterPage() {
-  const HandleErro = () => {
-    alert("Page was not found");
+  const [formData, setFormData] = useState({
+    email: "",
+  });
+
+  const HandleSubscribe = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch(
+        "https://kyhnet23-assignment.azurewebsites.net/api/subscribe?email=" +
+          formData.email,
+        {
+          method: "POST",
+        }
+      );
+      if (response.ok) {
+        alert("Successfully subscribed!");
+        setFormData({ email: "" });
+      } else {
+        throw new Error("Failed to subscribe.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Subscription failed. Please try again later.");
+    }
   };
   return (
     <div className="footer-main-div-wrapper">
@@ -30,10 +54,22 @@ function FooterPage() {
                 <i class="fa-regular fa-envelope"></i>
               </div>
               <div>
-                <input type="email" placeholder="Your Email" />
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  style={{ color: "white" }}
+                  value={formData.email}
+                  onChange={(e) =>
+                    setFormData({ ...formData, email: e.target.value })
+                  }
+                  required
+                />
               </div>
             </div>
-            <button className="subscribe-button-footer" onClick={HandleErro}>
+            <button
+              className="subscribe-button-footer"
+              onClick={HandleSubscribe}
+            >
               Subscribe
             </button>
           </div>
